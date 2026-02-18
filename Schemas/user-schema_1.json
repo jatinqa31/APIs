@@ -1,0 +1,144 @@
+{
+  "type": "object",
+  "properties": {
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "discountPercentage": {
+            "type": "number"
+          },
+          "rating": {
+            "type": "number"
+          },
+          "stock": {
+            "type": "number"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "brand": {
+            "type": "string"
+          },
+          "sku": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "number"
+          },
+          "dimensions": {
+            "type": "object",
+            "properties": {
+              "width": {
+                "type": "number"
+              },
+              "height": {
+                "type": "number"
+              },
+              "depth": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          },
+          "warrantyInformation": {
+            "type": "string"
+          },
+          "shippingInformation": {
+            "type": "string"
+          },
+          "availabilityStatus": {
+            "type": "string"
+          },
+          "reviews": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "rating": {
+                  "type": "number"
+                },
+                "comment": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "reviewerName": {
+                  "type": "string"
+                },
+                "reviewerEmail": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "returnPolicy": {
+            "type": "string"
+          },
+          "minimumOrderQuantity": {
+            "type": "number"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "createdAt": {
+                "type": "string"
+              },
+              "updatedAt": {
+                "type": "string"
+              },
+              "barcode": {
+                "type": "string"
+              },
+              "qrCode": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "images": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "thumbnail": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "total": {
+      "type": "number"
+    },
+    "skip": {
+      "type": "number"
+    },
+    "limit": {
+      "type": "number"
+    }
+  },
+  "additionalProperties": false
+}

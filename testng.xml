@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="API Suite" parallel="methods" thread-count="5">
+	<listeners>
+	    <listener class-name="tests.ExtentTestListener"/>
+	</listeners>
+    <test name="API Tests">
+        <classes>
+            <class name="tests.ApiExcelDrivenTest"/>
+        </classes>
+    </test>
+</suite>
