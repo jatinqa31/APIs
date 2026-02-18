@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">API Suite</th></tr>
+<tr><td><a href="#t0">API Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">17,946</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">API Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">API Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">tests.ApiExcelDrivenTest</td><td><a href="#m0">executeApiTest</a></td><td rowspan="5">1771400887370</td><td rowspan="5">2549</td></tr><tr class="failedeven"><td><a href="#m1">executeApiTest</a></td></tr><tr class="failedeven"><td><a href="#m2">executeApiTest</a></td></tr><tr class="failedeven"><td><a href="#m3">executeApiTest</a></td></tr><tr class="failedeven"><td><a href="#m4">executeApiTest</a></td></tr><tr><th colspan="4">API Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.ApiExcelDrivenTest</td><td><a href="#m5">executeApiTest</a></td><td rowspan="1">1771400895367</td><td rowspan="1">577</td></tr></tbody>
+</table>
+<h2>API Tests</h2><h3 id="m0">tests.ApiExcelDrivenTest#executeApiTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Expected Status=200, Endpoint=http://rahulshettyacademy.com/maps/api/place/get/json?place_id=cbeef2741cce7486303e61bbc3df2945&amp;key=qaclick123, Remarks=, Headers=, Test Case Id=TC_2, Request Body=, ExpectedSchemaPath=Schemas/user-schema_1.json, Method=GET, Request Name=Get Place API, Is_automated=Yes, Query Params=place_id=cbeef2741cce7486303e61bbc3df2945; key=qaclick123; , Auth Type=noauth}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Status code mismatch expected [200] but found [404]
+	at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:109)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.ApiExcelDrivenTest#executeApiTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Expected Status=200, Endpoint=https://rahulshettyacademy.com/maps/api/place/update/json?place_id=cbeef2741cce7486303e61bbc3df2945&amp;key=qaclick123, Remarks=, Headers=, Test Case Id=TC_3, Request Body={
+&quot;place_id&quot;:&quot;cbeef2741cce7486303e61bbc3df2945&quot;,
+&quot;address&quot;:&quot;70 winter walk, USA&quot;,
+&quot;key&quot;:&quot;qaclick123&quot;
+}, ExpectedSchemaPath=Schemas/user-schema_1.json, Method=PUT, Request Name=Update Place API, Is_automated=Yes, Query Params=place_id=cbeef2741cce7486303e61bbc3df2945; key=qaclick123; , Auth Type=noauth}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Status code mismatch expected [200] but found [404]
+	at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:109)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.ApiExcelDrivenTest#executeApiTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Expected Status=200, Endpoint=https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123, Remarks=, Headers=, Test Case Id=TC_1, Request Body={
+  &quot;location&quot;: {
+    &quot;lat&quot;: -38.383494,
+    &quot;lng&quot;: 33.427362
+  },
+  &quot;accuracy&quot;: 50,
+  &quot;name&quot;: &quot;Frontline house&quot;,
+  &quot;phone_number&quot;: &quot;(+91) 983 893 3937&quot;,
+  &quot;address&quot;: &quot;29, side layout, cohen 09&quot;,
+  &quot;types&quot;: [
+    &quot;shoe park&quot;,
+    &quot;shop&quot;
+  ],
+  &quot;website&quot;: &quot;http://google.com&quot;,
+  &quot;language&quot;: &quot;French-IN&quot;
+}, ExpectedSchemaPath=Schemas/user-schema_1.json, Method=POST, Request Name=Add Place API, Is_automated=Yes, Query Params=key=qaclick123; , Auth Type=noauth}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: properties
+Expected: limit
+     but none found
+ ; properties
+Expected: products
+     but none found
+ ; properties
+Expected: skip
+     but none found
+ ; properties
+Expected: total
+     but none found
+
+	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:417)
+	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:394)
+	at utils.SchemaCompareUtil.compareSchemas(SchemaCompareUtil.java:11)
+	at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:181)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.ApiExcelDrivenTest#executeApiTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Expected Status=200, Endpoint=https://dummyjson.com/products?limit=100, Remarks=, Headers=Accept=application/json; Content-Type=application/json; , Test Case Id=TC_6, Request Body=, ExpectedSchemaPath=Schemas/user-schema_1.json, Method=GET, Request Name=100-products, Is_automated=Yes, Query Params=limit=100; , Auth Type=noauth}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Status code mismatch expected [200] but found [400]
+	at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:109)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.ApiExcelDrivenTest#executeApiTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Expected Status=200, Endpoint=https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123, Remarks=, Headers=, Test Case Id=TC_4, Request Body={
+
+    &quot;place_id&quot;:&quot;cbeef2741cce7486303e61bbc3df2945&quot;
+}
+, ExpectedSchemaPath=Schemas/user-schema_1.json, Method=DELETE, Request Name=Delete Place API, Is_automated=Yes, Query Params=key=qaclick123; , Auth Type=noauth}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Status code mismatch expected [200] but found [404]
+	at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:109)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.ApiExcelDrivenTest#executeApiTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Expected Status=200, Endpoint=https://dummyjson.com/products, Remarks=, Headers=Accept=application/json; Content-Type=application/json; , Test Case Id=TC_5, Request Body=, ExpectedSchemaPath=Schemas/user-schema_1.json, Method=GET, Request Name=Dummy Json, Is_automated=Yes, Query Params=, Auth Type=noauth}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

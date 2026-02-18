@@ -1,0 +1,1445 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>REST Assured + Excel Framework</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">API Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 18, 2026 01:18:02 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add Place API</p>
+            <p class="text-sm">
+              <span>1:18:02 pm</span> / <span>00:00:04:800</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Add Place API</h5>
+<span class='badge badge-success'>02.18.2026 1:18:02 pm</span>
+<span class='badge badge-danger'>02.18.2026 1:18:07 pm</span>
+<span class='badge badge-default'>00:00:04:800</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:02 pm</td>
+        <td>
+          TestCaseId: TC_1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:02 pm</td>
+        <td>
+          Method: POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:02 pm</td>
+        <td>
+          Endpoint: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:04 pm</td>
+        <td>
+          Request Body:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:04 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({
+  "location": {
+    "lat": -38.383494,
+    "lng": 33.427362
+  },
+  "accuracy": 50,
+  "name": "Frontline house",
+  "phone_number": "(+91) 983 893 3937",
+  "address": "29, side layout, cohen 09",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "French-IN"
+}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Status Code: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Content-Type: application/json;charset=UTF-8
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Content-Length: 194
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Body Byte Length: 194
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Response Body (raw): '{"status":"OK","place_id":"e90c793424774a18b6fc9d9ad3231a47","scope":"APP","reference":"7a88f98257ba118ccb951706eb3875707a88f98257ba118ccb951706eb387570","id":"7a88f98257ba118ccb951706eb387570"}'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({"status":"OK","place_id":"e90c793424774a18b6fc9d9ad3231a47","scope":"APP","reference":"7a88f98257ba118ccb951706eb3875707a88f98257ba118ccb951706eb387570","id":"7a88f98257ba118ccb951706eb387570"}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          JSON is valid. Root node type: OBJECT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Raw response JSON captured for schema generation.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"status":"OK","place_id":"e90c793424774a18b6fc9d9ad3231a47","scope":"APP","reference":"7a88f98257ba118ccb951706eb3875707a88f98257ba118ccb951706eb387570","id":"7a88f98257ba118ccb951706eb387570"}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Actual Schema Generated Successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Actual Schema (pretty):
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({"type":"object","properties":{"status":{"type":"string"},"place_id":{"type":"string"},"scope":{"type":"string"},"reference":{"type":"string"},"id":{"type":"string"}},"required":["status","place_id","scope","reference","id"],"additionalProperties":false}); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Actual Schema Node toString: {"type":"object","properties":{"status":{"type":"string"},"place_id":{"type":"string"},"scope":{"type":"string"},"reference":{"type":"string"},"id":{"type":"string"}},"required":["status","place_id","scope","reference","id"],"additionalProperties":false}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Expected Schema Path: Schemas/user-schema_1.json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Expected Schema (pretty):
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({"type":"object","properties":{"products":{"type":"array","items":{"type":"object","properties":{"id":{"type":"number"},"title":{"type":"string"},"description":{"type":"string"},"category":{"type":"string"},"price":{"type":"number"},"discountPercentage":{"type":"number"},"rating":{"type":"number"},"stock":{"type":"number"},"tags":{"type":"array","items":{"type":"string"}},"brand":{"type":"string"},"sku":{"type":"string"},"weight":{"type":"number"},"dimensions":{"type":"object","properties":{"width":{"type":"number"},"height":{"type":"number"},"depth":{"type":"number"}},"additionalProperties":false},"warrantyInformation":{"type":"string"},"shippingInformation":{"type":"string"},"availabilityStatus":{"type":"string"},"reviews":{"type":"array","items":{"type":"object","properties":{"rating":{"type":"number"},"comment":{"type":"string"},"date":{"type":"string"},"reviewerName":{"type":"string"},"reviewerEmail":{"type":"string"}},"additionalProperties":false}},"returnPolicy":{"type":"string"},"minimumOrderQuantity":{"type":"number"},"meta":{"type":"object","properties":{"createdAt":{"type":"string"},"updatedAt":{"type":"string"},"barcode":{"type":"string"},"qrCode":{"type":"string"}},"additionalProperties":false},"images":{"type":"array","items":{"type":"string"}},"thumbnail":{"type":"string"}},"additionalProperties":false}},"total":{"type":"number"},"skip":{"type":"number"},"limit":{"type":"number"}},"additionalProperties":false}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Schema Validation Failed (SchemaCompareUtil)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Expected Schema:
+
+{"type":"object","properties":{"products":{"type":"array","items":{"type":"object","properties":{"id":{"type":"number"},"title":{"type":"string"},"description":{"type":"string"},"category":{"type":"string"},"price":{"type":"number"},"discountPercentage":{"type":"number"},"rating":{"type":"number"},"stock":{"type":"number"},"tags":{"type":"array","items":{"type":"string"}},"brand":{"type":"string"},"sku":{"type":"string"},"weight":{"type":"number"},"dimensions":{"type":"object","properties":{"width":{"type":"number"},"height":{"type":"number"},"depth":{"type":"number"}},"additionalProperties":false},"warrantyInformation":{"type":"string"},"shippingInformation":{"type":"string"},"availabilityStatus":{"type":"string"},"reviews":{"type":"array","items":{"type":"object","properties":{"rating":{"type":"number"},"comment":{"type":"string"},"date":{"type":"string"},"reviewerName":{"type":"string"},"reviewerEmail":{"type":"string"}},"additionalProperties":false}},"returnPolicy":{"type":"string"},"minimumOrderQuantity":{"type":"number"},"meta":{"type":"object","properties":{"createdAt":{"type":"string"},"updatedAt":{"type":"string"},"barcode":{"type":"string"},"qrCode":{"type":"string"}},"additionalProperties":false},"images":{"type":"array","items":{"type":"string"}},"thumbnail":{"type":"string"}},"additionalProperties":false}},"total":{"type":"number"},"skip":{"type":"number"},"limit":{"type":"number"}},"additionalProperties":false}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Actual Schema:
+
+{"type":"object","properties":{"status":{"type":"string"},"place_id":{"type":"string"},"scope":{"type":"string"},"reference":{"type":"string"},"id":{"type":"string"}},"required":["status","place_id","scope","reference","id"],"additionalProperties":false}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: properties
+Expected: limit
+     but none found
+ ; properties
+Expected: products
+     but none found
+ ; properties
+Expected: skip
+     but none found
+ ; properties
+Expected: total
+     but none found
+
+	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:417)
+	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:394)
+	at utils.SchemaCompareUtil.compareSchemas(SchemaCompareUtil.java:11)
+	at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:181)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Get Place API</p>
+            <p class="text-sm">
+              <span>1:18:07 pm</span> / <span>00:00:02:552</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Get Place API</h5>
+<span class='badge badge-success'>02.18.2026 1:18:07 pm</span>
+<span class='badge badge-danger'>02.18.2026 1:18:09 pm</span>
+<span class='badge badge-default'>00:00:02:552</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          TestCaseId: TC_2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Method: GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:07 pm</td>
+        <td>
+          Endpoint: http://rahulshettyacademy.com/maps/api/place/get/json?place_id=cbeef2741cce7486303e61bbc3df2945&key=qaclick123
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:09 pm</td>
+        <td>
+          Status Code: 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:09 pm</td>
+        <td>
+          Content-Type: application/json;charset=UTF-8
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:09 pm</td>
+        <td>
+          Content-Length: 67
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:09 pm</td>
+        <td>
+          Body Byte Length: 67
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:09 pm</td>
+        <td>
+          Response Body (raw): '{"msg":"Get operation failed, looks like place_id  doesn't exists"}'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({"msg":"Get operation failed, looks like place_id  doesn't exists"}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:18:09 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Status code mismatch expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:109)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update Place API</p>
+            <p class="text-sm">
+              <span>1:18:09 pm</span> / <span>00:00:02:692</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Update Place API</h5>
+<span class='badge badge-success'>02.18.2026 1:18:09 pm</span>
+<span class='badge badge-danger'>02.18.2026 1:18:12 pm</span>
+<span class='badge badge-default'>00:00:02:692</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:09 pm</td>
+        <td>
+          TestCaseId: TC_3
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:09 pm</td>
+        <td>
+          Method: PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:09 pm</td>
+        <td>
+          Endpoint: https://rahulshettyacademy.com/maps/api/place/update/json?place_id=cbeef2741cce7486303e61bbc3df2945&key=qaclick123
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:09 pm</td>
+        <td>
+          Request Body:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:09 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({
+"place_id":"cbeef2741cce7486303e61bbc3df2945",
+"address":"70 winter walk, USA",
+"key":"qaclick123"
+}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:12 pm</td>
+        <td>
+          Status Code: 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:12 pm</td>
+        <td>
+          Content-Type: application/json;charset=UTF-8
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:12 pm</td>
+        <td>
+          Content-Length: 77
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:12 pm</td>
+        <td>
+          Body Byte Length: 77
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:12 pm</td>
+        <td>
+          Response Body (raw): '{"msg":"Update address operation failed, looks like the data doesn't exists"}'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:12 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create({"msg":"Update address operation failed, looks like the data doesn't exists"}); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:18:12 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Status code mismatch expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:109)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Delete Place API</p>
+            <p class="text-sm">
+              <span>1:18:12 pm</span> / <span>00:00:02:745</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Delete Place API</h5>
+<span class='badge badge-success'>02.18.2026 1:18:12 pm</span>
+<span class='badge badge-danger'>02.18.2026 1:18:15 pm</span>
+<span class='badge badge-default'>00:00:02:745</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:12 pm</td>
+        <td>
+          TestCaseId: TC_4
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:12 pm</td>
+        <td>
+          Method: DELETE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:12 pm</td>
+        <td>
+          Endpoint: https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:12 pm</td>
+        <td>
+          Request Body:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:12 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-8'></div>
+ <script>
+  function jsonTreeCreate8() { 
+   document.getElementById('code-block-json-8').innerHTML = JSONTree.create({
+
+    "place_id":"cbeef2741cce7486303e61bbc3df2945"
+}
+); 
+  }
+  jsonTreeCreate8();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Status Code: 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Content-Type: application/json;charset=UTF-8
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Content-Length: 69
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Body Byte Length: 69
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Response Body (raw): '{"msg":"Delete operation failed, looks like the data doesn't exists"}'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-9'></div>
+ <script>
+  function jsonTreeCreate9() { 
+   document.getElementById('code-block-json-9').innerHTML = JSONTree.create({"msg":"Delete operation failed, looks like the data doesn't exists"}); 
+  }
+  jsonTreeCreate9();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Status code mismatch expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:109)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Dummy Json</p>
+            <p class="text-sm">
+              <span>1:18:15 pm</span> / <span>00:00:00:578</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Dummy Json</h5>
+<span class='badge badge-success'>02.18.2026 1:18:15 pm</span>
+<span class='badge badge-danger'>02.18.2026 1:18:15 pm</span>
+<span class='badge badge-default'>00:00:00:578</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          TestCaseId: TC_5
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Method: GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Endpoint: https://dummyjson.com/products
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Status Code: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Content-Type: application/json; charset=utf-8
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Content-Length: null
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Body Byte Length: 44090
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Response Body (raw): '{"products":[{"id":1,"title":"Essence Mascara Lash Princess","description":"The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.","category":"beauty","price":9.99,"discountPercentage":10.48,"rating":2.56,"stock":99,"tags":["beauty","mascara"],"brand":"Essence","sku":"BEA-ESS-ESS-001","weight":4,"dimensions":{"width":15.14,"height":13.08,"depth":22.99},"warrantyInformation":"1 week warranty","shippingInformation":"Ships in 3-5 business days","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Collins","reviewerEmail":"eleanor.collins@x.dummyjson.com"},{"rating":4,"comment":"Very satisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Lucas Gordon","reviewerEmail":"lucas.gordon@x.dummyjson.com"},{"rating":5,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Collins","reviewerEmail":"eleanor.collins@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":48,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"5784719087687","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp"},{"id":2,"title":"Eyeshadow Palette with Mirror","description":"The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.","category":"beauty","price":19.99,"discountPercentage":18.19,"rating":2.86,"stock":34,"tags":["beauty","eyeshadow"],"brand":"Glamour Beauty","sku":"BEA-GLA-EYE-002","weight":9,"dimensions":{"width":9.26,"height":22.47,"depth":27.67},"warrantyInformation":"1 year warranty","shippingInformation":"Ships in 2 weeks","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Savannah Gomez","reviewerEmail":"savannah.gomez@x.dummyjson.com"},{"rating":4,"comment":"Awesome product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Christian Perez","reviewerEmail":"christian.perez@x.dummyjson.com"},{"rating":1,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nicholas Bailey","reviewerEmail":"nicholas.bailey@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":20,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"9170275171413","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp"},{"id":3,"title":"Powder Canister","description":"The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.","category":"beauty","price":14.99,"discountPercentage":9.84,"rating":4.64,"stock":89,"tags":["beauty","face powder"],"brand":"Velvet Touch","sku":"BEA-VEL-POW-003","weight":8,"dimensions":{"width":29.27,"height":27.93,"depth":20.59},"warrantyInformation":"3 months warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Alexander Jones","reviewerEmail":"alexander.jones@x.dummyjson.com"},{"rating":5,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Elijah Cruz","reviewerEmail":"elijah.cruz@x.dummyjson.com"},{"rating":1,"comment":"Very dissatisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Avery Perez","reviewerEmail":"avery.perez@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":22,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"8418883906837","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp"},{"id":4,"title":"Red Lipstick","description":"The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.","category":"beauty","price":12.99,"discountPercentage":12.16,"rating":4.36,"stock":91,"tags":["beauty","lipstick"],"brand":"Chic Cosmetics","sku":"BEA-CHI-LIP-004","weight":1,"dimensions":{"width":18.11,"height":28.38,"depth":22.17},"warrantyInformation":"3 year warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Liam Garcia","reviewerEmail":"liam.garcia@x.dummyjson.com"},{"rating":5,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ruby Andrews","reviewerEmail":"ruby.andrews@x.dummyjson.com"},{"rating":5,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Clara Berry","reviewerEmail":"clara.berry@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":40,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"9467746727219","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp"},{"id":5,"title":"Red Nail Polish","description":"The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.","category":"beauty","price":8.99,"discountPercentage":11.44,"rating":4.32,"stock":79,"tags":["beauty","nail polish"],"brand":"Nail Couture","sku":"BEA-NAI-NAI-005","weight":8,"dimensions":{"width":21.63,"height":16.48,"depth":29.84},"warrantyInformation":"1 month warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Benjamin Wilson","reviewerEmail":"benjamin.wilson@x.dummyjson.com"},{"rating":5,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Liam Smith","reviewerEmail":"liam.smith@x.dummyjson.com"},{"rating":1,"comment":"Very unhappy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Clara Berry","reviewerEmail":"clara.berry@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":22,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"4063010628104","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/thumbnail.webp"},{"id":6,"title":"Calvin Klein CK One","description":"CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.","category":"fragrances","price":49.99,"discountPercentage":1.89,"rating":4.37,"stock":29,"tags":["fragrances","perfumes"],"brand":"Calvin Klein","sku":"FRA-CAL-CAL-006","weight":7,"dimensions":{"width":29.36,"height":27.76,"depth":20.72},"warrantyInformation":"1 week warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Layla Young","reviewerEmail":"layla.young@x.dummyjson.com"},{"rating":4,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Daniel Cook","reviewerEmail":"daniel.cook@x.dummyjson.com"},{"rating":3,"comment":"Not as described!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Jacob Cooper","reviewerEmail":"jacob.cooper@x.dummyjson.com"}],"returnPolicy":"90 days return policy","minimumOrderQuantity":9,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"2451534060749","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp","https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp","https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp"},{"id":7,"title":"Chanel Coco Noir Eau De","description":"Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.","category":"fragrances","price":129.99,"discountPercentage":16.51,"rating":4.26,"stock":58,"tags":["fragrances","perfumes"],"brand":"Chanel","sku":"FRA-CHA-CHA-007","weight":7,"dimensions":{"width":24.5,"height":25.7,"depth":25.98},"warrantyInformation":"3 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ruby Andrews","reviewerEmail":"ruby.andrews@x.dummyjson.com"},{"rating":5,"comment":"Awesome product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Leah Henderson","reviewerEmail":"leah.henderson@x.dummyjson.com"},{"rating":5,"comment":"Very happy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Xavier Wright","reviewerEmail":"xavier.wright@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":1,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"4091737746820","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp","https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/2.webp","https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp"},{"id":8,"title":"Dior J'adore","description":"J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.","category":"fragrances","price":89.99,"discountPercentage":14.72,"rating":3.8,"stock":98,"tags":["fragrances","perfumes"],"brand":"Dior","sku":"FRA-DIO-DIO-008","weight":4,"dimensions":{"width":27.67,"height":28.28,"depth":11.83},"warrantyInformation":"1 week warranty","shippingInformation":"Ships in 2 weeks","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nicholas Bailey","reviewerEmail":"nicholas.bailey@x.dummyjson.com"},{"rating":4,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Penelope Harper","reviewerEmail":"penelope.harper@x.dummyjson.com"},{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Emma Miller","reviewerEmail":"emma.miller@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":10,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"1445086097250","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/1.webp","https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/2.webp","https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp"},{"id":9,"title":"Dolce Shine Eau de","description":"Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.","category":"fragrances","price":69.99,"discountPercentage":0.62,"rating":3.96,"stock":4,"tags":["fragrances","perfumes"],"brand":"Dolce & Gabbana","sku":"FRA-DOL-DOL-009","weight":6,"dimensions":{"width":27.28,"height":29.88,"depth":18.3},"warrantyInformation":"3 year warranty","shippingInformation":"Ships in 1 month","availabilityStatus":"Low Stock","reviews":[{"rating":4,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Mateo Bennett","reviewerEmail":"mateo.bennett@x.dummyjson.com"},{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nolan Gonzalez","reviewerEmail":"nolan.gonzalez@x.dummyjson.com"},{"rating":5,"comment":"Very happy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Aurora Lawson","reviewerEmail":"aurora.lawson@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":2,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"3023868210708","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/1.webp","https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/2.webp","https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp"},{"id":10,"title":"Gucci Bloom Eau de","description":"Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.","category":"fragrances","price":79.99,"discountPercentage":14.39,"rating":2.74,"stock":91,"tags":["fragrances","perfumes"],"brand":"Gucci","sku":"FRA-GUC-GUC-010","weight":7,"dimensions":{"width":20.92,"height":21.68,"depth":11.2},"warrantyInformation":"6 months warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":1,"comment":"Very dissatisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Cameron Perez","reviewerEmail":"cameron.perez@x.dummyjson.com"},{"rating":5,"comment":"Very happy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Daniel Cook","reviewerEmail":"daniel.cook@x.dummyjson.com"},{"rating":4,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Addison Wright","reviewerEmail":"addison.wright@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":2,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"3170832177880","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp","https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/2.webp","https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp"},{"id":11,"title":"Annibale Colombo Bed","description":"The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.","category":"furniture","price":1899.99,"discountPercentage":8.57,"rating":4.77,"stock":88,"tags":["furniture","beds"],"brand":"Annibale Colombo","sku":"FUR-ANN-ANN-011","weight":10,"dimensions":{"width":28.16,"height":25.36,"depth":17.28},"warrantyInformation":"1 year warranty","shippingInformation":"Ships in 1 month","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Christopher West","reviewerEmail":"christopher.west@x.dummyjson.com"},{"rating":4,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Vivian Carter","reviewerEmail":"vivian.carter@x.dummyjson.com"},{"rating":1,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Mason Wright","reviewerEmail":"mason.wright@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":1,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"3610757456581","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp","https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/2.webp","https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp"},{"id":12,"title":"Annibale Colombo Sofa","description":"The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.","category":"furniture","price":2499.99,"discountPercentage":14.4,"rating":3.92,"stock":60,"tags":["furniture","sofas"],"brand":"Annibale Colombo","sku":"FUR-ANN-ANN-012","weight":6,"dimensions":{"width":12.75,"height":20.55,"depth":19.06},"warrantyInformation":"Lifetime warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Very unhappy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Christian Perez","reviewerEmail":"christian.perez@x.dummyjson.com"},{"rating":5,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Lillian Bishop","reviewerEmail":"lillian.bishop@x.dummyjson.com"},{"rating":1,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Lillian Simmons","reviewerEmail":"lillian.simmons@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":1,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"1777662847736","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp","https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/2.webp","https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp"},{"id":13,"title":"Bedside Table African Cherry","description":"The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.","category":"furniture","price":299.99,"discountPercentage":19.09,"rating":2.87,"stock":64,"tags":["furniture","bedside tables"],"brand":"Furniture Co.","sku":"FUR-FUR-BED-013","weight":2,"dimensions":{"width":13.47,"height":24.99,"depth":27.35},"warrantyInformation":"5 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Aaliyah Hanson","reviewerEmail":"aaliyah.hanson@x.dummyjson.com"},{"rating":4,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Liam Smith","reviewerEmail":"liam.smith@x.dummyjson.com"},{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Avery Barnes","reviewerEmail":"avery.barnes@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":3,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"6441287925979","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp","https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/2.webp","https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp"},{"id":14,"title":"Knoll Saarinen Executive Conference Chair","description":"The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.","category":"furniture","price":499.99,"discountPercentage":2.01,"rating":4.88,"stock":26,"tags":["furniture","office chairs"],"brand":"Knoll","sku":"FUR-KNO-KNO-014","weight":10,"dimensions":{"width":13.81,"height":7.5,"depth":5.62},"warrantyInformation":"2 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Waste of money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ella Cook","reviewerEmail":"ella.cook@x.dummyjson.com"},{"rating":2,"comment":"Very dissatisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Clara Berry","reviewerEmail":"clara.berry@x.dummyjson.com"},{"rating":5,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Elena Long","reviewerEmail":"elena.long@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":5,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"8919386859966","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp","https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/2.webp","https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp"},{"id":15,"title":"Wooden Bathroom Sink With Mirror","description":"The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.","category":"furniture","price":799.99,"discountPercentage":8.8,"rating":3.59,"stock":7,"tags":["furniture","bathroom"],"brand":"Bath Trends","sku":"FUR-BAT-WOO-015","weight":10,"dimensions":{"width":7.98,"height":8.88,"depth":28.46},"warrantyInformation":"3 year warranty","shippingInformation":"Ships in 3-5 business days","availabilityStatus":"Low Stock","reviews":[{"rating":4,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Logan Torres","reviewerEmail":"logan.torres@x.dummyjson.com"},{"rating":5,"comment":"Very pleased!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Aria Parker","reviewerEmail":"aria.parker@x.dummyjson.com"},{"rating":3,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Dylan Wells","reviewerEmail":"dylan.wells@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":2,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"1958104402873","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/1.webp","https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/2.webp","https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp"},{"id":16,"title":"Apple","description":"Fresh and crisp apples, perfect for snacking or incorporating into various recipes.","category":"groceries","price":1.99,"discountPercentage":12.62,"rating":4.19,"stock":8,"tags":["fruits"],"sku":"GRO-BRD-APP-016","weight":9,"dimensions":{"width":13.66,"height":11.01,"depth":9.73},"warrantyInformation":"3 year warranty","shippingInformation":"Ships in 2 weeks","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Very satisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Sophia Brown","reviewerEmail":"sophia.brown@x.dummyjson.com"},{"rating":1,"comment":"Very dissatisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Scarlett Bowman","reviewerEmail":"scarlett.bowman@x.dummyjson.com"},{"rating":3,"comment":"Very unhappy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"William Gonzalez","reviewerEmail":"william.gonzalez@x.dummyjson.com"}],"returnPolicy":"90 days return policy","minimumOrderQuantity":7,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"7962803553314","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/apple/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp"},{"id":17,"title":"Beef Steak","description":"High-quality beef steak, great for grilling or cooking to your preferred level of doneness.","category":"groceries","price":12.99,"discountPercentage":9.61,"rating":4.47,"stock":86,"tags":["meat"],"sku":"GRO-BRD-BEE-017","weight":10,"dimensions":{"width":18.9,"height":5.77,"depth":18.57},"warrantyInformation":"3 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Tyler","reviewerEmail":"eleanor.tyler@x.dummyjson.com"},{"rating":4,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Alexander Jones","reviewerEmail":"alexander.jones@x.dummyjson.com"},{"rating":5,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Natalie Harris","reviewerEmail":"natalie.harris@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":43,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"5640063409695","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/beef-steak/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.webp"},{"id":18,"title":"Cat Food","description":"Nutritious cat food formulated to meet the dietary needs of your feline friend.","category":"groceries","price":8.99,"discountPercentage":9.58,"rating":3.13,"stock":46,"tags":["pet supplies","cat food"],"sku":"GRO-BRD-FOO-018","weight":10,"dimensions":{"width":18.08,"height":9.26,"depth":21.86},"warrantyInformation":"1 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Noah Lewis","reviewerEmail":"noah.lewis@x.dummyjson.com"},{"rating":3,"comment":"Very unhappy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ruby Andrews","reviewerEmail":"ruby.andrews@x.dummyjson.com"},{"rating":2,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ethan Thompson","reviewerEmail":"ethan.thompson@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":18,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"1483991328610","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/cat-food/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/cat-food/thumbnail.webp"},{"id":19,"title":"Chicken Meat","description":"Fresh and tender chicken meat, suitable for various culinary preparations.","category":"groceries","price":9.99,"discountPercentage":13.7,"rating":3.19,"stock":97,"tags":["meat"],"sku":"GRO-BRD-CHI-019","weight":1,"dimensions":{"width":11.03,"height":22.11,"depth":16.01},"warrantyInformation":"1 year warranty","shippingInformation":"Ships in 1 month","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Mateo Bennett","reviewerEmail":"mateo.bennett@x.dummyjson.com"},{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Jackson Evans","reviewerEmail":"jackson.evans@x.dummyjson.com"},{"rating":3,"comment":"Not worth the price!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Sadie Morales","reviewerEmail":"sadie.morales@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":22,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"8829514594521","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/chicken-meat/1.webp","https://cdn.dummyjson.com/product-images/groceries/chicken-meat/2.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.webp"},{"id":20,"title":"Cooking Oil","description":"Versatile cooking oil suitable for frying, sautéing, and various culinary applications.","category":"groceries","price":4.99,"discountPercentage":9.33,"rating":4.8,"stock":10,"tags":["cooking essentials"],"sku":"GRO-BRD-COO-020","weight":5,"dimensions":{"width":19.95,"height":27.54,"depth":24.86},"warrantyInformation":"Lifetime warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Very happy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Victoria McDonald","reviewerEmail":"victoria.mcdonald@x.dummyjson.com"},{"rating":2,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Hazel Evans","reviewerEmail":"hazel.evans@x.dummyjson.com"},{"rating":5,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Zoe Bennett","reviewerEmail":"zoe.bennett@x.dummyjson.com"}],"returnPolicy":"30 days return policy","minimumOrderQuantity":46,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"4874727824518","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/cooking-oil/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.webp"},{"id":21,"title":"Cucumber","description":"Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.","category":"groceries","price":1.49,"discountPercentage":0.16,"rating":4.07,"stock":84,"tags":["vegetables"],"sku":"GRO-BRD-CUC-021","weight":4,"dimensions":{"width":12.8,"height":28.38,"depth":21.34},"warrantyInformation":"2 year warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Lincoln Kelly","reviewerEmail":"lincoln.kelly@x.dummyjson.com"},{"rating":4,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Savannah Gomez","reviewerEmail":"savannah.gomez@x.dummyjson.com"},{"rating":2,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"James Davis","reviewerEmail":"james.davis@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":2,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"5300066378225","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/cucumber/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/cucumber/thumbnail.webp"},{"id":22,"title":"Dog Food","description":"Specially formulated dog food designed to provide essential nutrients for your canine companion.","category":"groceries","price":10.99,"discountPercentage":10.27,"rating":4.55,"stock":71,"tags":["pet supplies","dog food"],"sku":"GRO-BRD-FOO-022","weight":10,"dimensions":{"width":16.93,"height":27.15,"depth":9.29},"warrantyInformation":"No warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nicholas Edwards","reviewerEmail":"nicholas.edwards@x.dummyjson.com"},{"rating":5,"comment":"Awesome product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Zachary Lee","reviewerEmail":"zachary.lee@x.dummyjson.com"},{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nova Cooper","reviewerEmail":"nova.cooper@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":43,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"5906686116469","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/dog-food/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/dog-food/thumbnail.webp"},{"id":23,"title":"Eggs","description":"Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.","category":"groceries","price":2.99,"discountPercentage":11.05,"rating":2.53,"stock":9,"tags":["dairy"],"sku":"GRO-BRD-EGG-023","weight":2,"dimensions":{"width":11.42,"height":7.44,"depth":16.95},"warrantyInformation":"1 week warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Disappointing product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Penelope King","reviewerEmail":"penelope.king@x.dummyjson.com"},{"rating":3,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Tyler","reviewerEmail":"eleanor.tyler@x.dummyjson.com"},{"rating":4,"comment":"Very pleased!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Benjamin Foster","reviewerEmail":"benjamin.foster@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":32,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"3478638588469","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/eggs/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.webp"},{"id":24,"title":"Fish Steak","description":"Quality fish steak, suitable for grilling, baking, or pan-searing.","category":"groceries","price":14.99,"discountPercentage":4.23,"rating":3.78,"stock":74,"tags":["seafood"],"sku":"GRO-BRD-FIS-024","weight":6,"dimensions":{"width":14.95,"height":26.31,"depth":11.27},"warrantyInformation":"1 month warranty","shippingInformation":"Ships in 3-5 business days","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Would not buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Caleb Perkins","reviewerEmail":"caleb.perkins@x.dummyjson.com"},{"rating":5,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Isabella Jackson","reviewerEmail":"isabella.jackson@x.dummyjson.com"},{"rating":4,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nathan Dixon","reviewerEmail":"nathan.dixon@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":50,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"9595036192098","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/fish-steak/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/fish-steak/thumbnail.webp"},{"id":25,"title":"Green Bell Pepper","description":"Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.","category":"groceries","price":1.29,"discountPercentage":0.16,"rating":3.25,"stock":33,"tags":["vegetables"],"sku":"GRO-BRD-GRE-025","weight":2,"dimensions":{"width":15.33,"height":26.65,"depth":14.44},"warrantyInformation":"1 month warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Avery Carter","reviewerEmail":"avery.carter@x.dummyjson.com"},{"rating":3,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Henry Hill","reviewerEmail":"henry.hill@x.dummyjson.com"},{"rating":5,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Addison Wright","reviewerEmail":"addison.wright@x.dummyjson.com"}],"returnPolicy":"30 days return policy","minimumOrderQuantity":12,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"2365227493323","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp"},{"id":26,"title":"Green Chili Pepper","description":"Spicy green chili pepper, ideal for adding heat to your favorite recipes.","category":"groceries","price":0.99,"discountPercentage":1,"rating":3.66,"stock":3,"tags":["vegetables"],"sku":"GRO-BRD-GRE-026","weight":7,"dimensions":{"width":15.38,"height":18.12,"depth":19.92},"warrantyInformation":"2 year warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"Low Stock","reviews":[{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Luna Russell","reviewerEmail":"luna.russell@x.dummyjson.com"},{"rating":1,"comment":"Waste of money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Noah Lewis","reviewerEmail":"noah.lewis@x.dummyjson.com"},{"rating":3,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Clara Berry","reviewerEmail":"clara.berry@x.dummyjson.com"}],"returnPolicy":"30 days return policy","minimumOrderQuantity":39,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"9335000538563","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/thumbnail.webp"},{"id":27,"title":"Honey Jar","description":"Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.","category":"groceries","price":6.99,"discountPercentage":14.4,"rating":3.97,"stock":34,"tags":["condiments"],"sku":"GRO-BRD-HON-027","weight":2,"dimensions":{"width":9.28,"height":21.72,"depth":17.74},"warrantyInformation":"1 month warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":1,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Autumn Gomez","reviewerEmail":"autumn.gomez@x.dummyjson.com"},{"rating":4,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Benjamin Wilson","reviewerEmail":"benjamin.wilson@x.dummyjson.com"},{"rating":2,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nicholas Edwards","reviewerEmail":"nicholas.edwards@x.dummyjson.com"}],"returnPolicy":"90 days return policy","minimumOrderQuantity":47,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"6354306346329","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/honey-jar/thumbnail.webp"},{"id":28,"title":"Ice Cream","description":"Creamy and delicious ice cream, available in various flavors for a delightful treat.","category":"groceries","price":5.49,"discountPercentage":8.69,"rating":3.39,"stock":27,"tags":["desserts"],"sku":"GRO-BRD-CRE-028","weight":1,"dimensions":{"width":14.83,"height":15.07,"depth":24.2},"warrantyInformation":"1 month warranty","shippingInformation":"Ships in 2 weeks","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Very pleased!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Elijah Cruz","reviewerEmail":"elijah.cruz@x.dummyjson.com"},{"rating":4,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Jace Smith","reviewerEmail":"jace.smith@x.dummyjson.com"},{"rating":5,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Sadie Morales","reviewerEmail":"sadie.morales@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":42,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"0788954559076","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/ice-cream/1.webp","https://cdn.dummyjson.com/product-images/groceries/ice-cream/2.webp","https://cdn.dummyjson.com/product-images/groceries/ice-cream/3.webp","https://cdn.dummyjson.com/product-images/groceries/ice-cream/4.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp"},{"id":29,"title":"Juice","description":"Refreshing fruit juice, packed with vitamins and great for staying hydrated.","category":"groceries","price":3.99,"discountPercentage":12.06,"rating":3.94,"stock":50,"tags":["beverages"],"sku":"GRO-BRD-JUI-029","weight":1,"dimensions":{"width":18.56,"height":21.46,"depth":28.02},"warrantyInformation":"6 months warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nolan Gonzalez","reviewerEmail":"nolan.gonzalez@x.dummyjson.com"},{"rating":4,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Bella Grant","reviewerEmail":"bella.grant@x.dummyjson.com"},{"rating":5,"comment":"Awesome product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Aria Flores","reviewerEmail":"aria.flores@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":25,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"6936112580956","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/juice/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/juice/thumbnail.webp"},{"id":30,"title":"Kiwi","description":"Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.","category":"groceries","price":2.49,"discountPercentage":15.22,"rating":4.93,"stock":99,"tags":["fruits"],"sku":"GRO-BRD-KIW-030","weight":5,"dimensions":{"width":19.4,"height":18.67,"depth":17.13},"warrantyInformation":"6 months warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Emily Brown","reviewerEmail":"emily.brown@x.dummyjson.com"},{"rating":2,"comment":"Would not buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Jackson Morales","reviewerEmail":"jackson.morales@x.dummyjson.com"},{"rating":4,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nora Russell","reviewerEmail":"nora.russell@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":30,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"2530169917252","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/kiwi/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.webp"}],"total":194,"skip":0,"limit":30}'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-10'></div>
+ <script>
+  function jsonTreeCreate10() { 
+   document.getElementById('code-block-json-10').innerHTML = JSONTree.create({"products":[{"id":1,"title":"Essence Mascara Lash Princess","description":"The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.","category":"beauty","price":9.99,"discountPercentage":10.48,"rating":2.56,"stock":99,"tags":["beauty","mascara"],"brand":"Essence","sku":"BEA-ESS-ESS-001","weight":4,"dimensions":{"width":15.14,"height":13.08,"depth":22.99},"warrantyInformation":"1 week warranty","shippingInformation":"Ships in 3-5 business days","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Collins","reviewerEmail":"eleanor.collins@x.dummyjson.com"},{"rating":4,"comment":"Very satisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Lucas Gordon","reviewerEmail":"lucas.gordon@x.dummyjson.com"},{"rating":5,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Collins","reviewerEmail":"eleanor.collins@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":48,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"5784719087687","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp"},{"id":2,"title":"Eyeshadow Palette with Mirror","description":"The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.","category":"beauty","price":19.99,"discountPercentage":18.19,"rating":2.86,"stock":34,"tags":["beauty","eyeshadow"],"brand":"Glamour Beauty","sku":"BEA-GLA-EYE-002","weight":9,"dimensions":{"width":9.26,"height":22.47,"depth":27.67},"warrantyInformation":"1 year warranty","shippingInformation":"Ships in 2 weeks","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Savannah Gomez","reviewerEmail":"savannah.gomez@x.dummyjson.com"},{"rating":4,"comment":"Awesome product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Christian Perez","reviewerEmail":"christian.perez@x.dummyjson.com"},{"rating":1,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nicholas Bailey","reviewerEmail":"nicholas.bailey@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":20,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"9170275171413","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp"},{"id":3,"title":"Powder Canister","description":"The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.","category":"beauty","price":14.99,"discountPercentage":9.84,"rating":4.64,"stock":89,"tags":["beauty","face powder"],"brand":"Velvet Touch","sku":"BEA-VEL-POW-003","weight":8,"dimensions":{"width":29.27,"height":27.93,"depth":20.59},"warrantyInformation":"3 months warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Alexander Jones","reviewerEmail":"alexander.jones@x.dummyjson.com"},{"rating":5,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Elijah Cruz","reviewerEmail":"elijah.cruz@x.dummyjson.com"},{"rating":1,"comment":"Very dissatisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Avery Perez","reviewerEmail":"avery.perez@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":22,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"8418883906837","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp"},{"id":4,"title":"Red Lipstick","description":"The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.","category":"beauty","price":12.99,"discountPercentage":12.16,"rating":4.36,"stock":91,"tags":["beauty","lipstick"],"brand":"Chic Cosmetics","sku":"BEA-CHI-LIP-004","weight":1,"dimensions":{"width":18.11,"height":28.38,"depth":22.17},"warrantyInformation":"3 year warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Liam Garcia","reviewerEmail":"liam.garcia@x.dummyjson.com"},{"rating":5,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ruby Andrews","reviewerEmail":"ruby.andrews@x.dummyjson.com"},{"rating":5,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Clara Berry","reviewerEmail":"clara.berry@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":40,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"9467746727219","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp"},{"id":5,"title":"Red Nail Polish","description":"The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.","category":"beauty","price":8.99,"discountPercentage":11.44,"rating":4.32,"stock":79,"tags":["beauty","nail polish"],"brand":"Nail Couture","sku":"BEA-NAI-NAI-005","weight":8,"dimensions":{"width":21.63,"height":16.48,"depth":29.84},"warrantyInformation":"1 month warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Benjamin Wilson","reviewerEmail":"benjamin.wilson@x.dummyjson.com"},{"rating":5,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Liam Smith","reviewerEmail":"liam.smith@x.dummyjson.com"},{"rating":1,"comment":"Very unhappy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Clara Berry","reviewerEmail":"clara.berry@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":22,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"4063010628104","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/thumbnail.webp"},{"id":6,"title":"Calvin Klein CK One","description":"CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.","category":"fragrances","price":49.99,"discountPercentage":1.89,"rating":4.37,"stock":29,"tags":["fragrances","perfumes"],"brand":"Calvin Klein","sku":"FRA-CAL-CAL-006","weight":7,"dimensions":{"width":29.36,"height":27.76,"depth":20.72},"warrantyInformation":"1 week warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Layla Young","reviewerEmail":"layla.young@x.dummyjson.com"},{"rating":4,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Daniel Cook","reviewerEmail":"daniel.cook@x.dummyjson.com"},{"rating":3,"comment":"Not as described!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Jacob Cooper","reviewerEmail":"jacob.cooper@x.dummyjson.com"}],"returnPolicy":"90 days return policy","minimumOrderQuantity":9,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"2451534060749","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp","https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp","https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp"},{"id":7,"title":"Chanel Coco Noir Eau De","description":"Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.","category":"fragrances","price":129.99,"discountPercentage":16.51,"rating":4.26,"stock":58,"tags":["fragrances","perfumes"],"brand":"Chanel","sku":"FRA-CHA-CHA-007","weight":7,"dimensions":{"width":24.5,"height":25.7,"depth":25.98},"warrantyInformation":"3 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ruby Andrews","reviewerEmail":"ruby.andrews@x.dummyjson.com"},{"rating":5,"comment":"Awesome product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Leah Henderson","reviewerEmail":"leah.henderson@x.dummyjson.com"},{"rating":5,"comment":"Very happy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Xavier Wright","reviewerEmail":"xavier.wright@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":1,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"4091737746820","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp","https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/2.webp","https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp"},{"id":8,"title":"Dior J'adore","description":"J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.","category":"fragrances","price":89.99,"discountPercentage":14.72,"rating":3.8,"stock":98,"tags":["fragrances","perfumes"],"brand":"Dior","sku":"FRA-DIO-DIO-008","weight":4,"dimensions":{"width":27.67,"height":28.28,"depth":11.83},"warrantyInformation":"1 week warranty","shippingInformation":"Ships in 2 weeks","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nicholas Bailey","reviewerEmail":"nicholas.bailey@x.dummyjson.com"},{"rating":4,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Penelope Harper","reviewerEmail":"penelope.harper@x.dummyjson.com"},{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Emma Miller","reviewerEmail":"emma.miller@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":10,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"1445086097250","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/1.webp","https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/2.webp","https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp"},{"id":9,"title":"Dolce Shine Eau de","description":"Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.","category":"fragrances","price":69.99,"discountPercentage":0.62,"rating":3.96,"stock":4,"tags":["fragrances","perfumes"],"brand":"Dolce & Gabbana","sku":"FRA-DOL-DOL-009","weight":6,"dimensions":{"width":27.28,"height":29.88,"depth":18.3},"warrantyInformation":"3 year warranty","shippingInformation":"Ships in 1 month","availabilityStatus":"Low Stock","reviews":[{"rating":4,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Mateo Bennett","reviewerEmail":"mateo.bennett@x.dummyjson.com"},{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nolan Gonzalez","reviewerEmail":"nolan.gonzalez@x.dummyjson.com"},{"rating":5,"comment":"Very happy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Aurora Lawson","reviewerEmail":"aurora.lawson@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":2,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"3023868210708","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/1.webp","https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/2.webp","https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp"},{"id":10,"title":"Gucci Bloom Eau de","description":"Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.","category":"fragrances","price":79.99,"discountPercentage":14.39,"rating":2.74,"stock":91,"tags":["fragrances","perfumes"],"brand":"Gucci","sku":"FRA-GUC-GUC-010","weight":7,"dimensions":{"width":20.92,"height":21.68,"depth":11.2},"warrantyInformation":"6 months warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":1,"comment":"Very dissatisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Cameron Perez","reviewerEmail":"cameron.perez@x.dummyjson.com"},{"rating":5,"comment":"Very happy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Daniel Cook","reviewerEmail":"daniel.cook@x.dummyjson.com"},{"rating":4,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Addison Wright","reviewerEmail":"addison.wright@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":2,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"3170832177880","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp","https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/2.webp","https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp"},{"id":11,"title":"Annibale Colombo Bed","description":"The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.","category":"furniture","price":1899.99,"discountPercentage":8.57,"rating":4.77,"stock":88,"tags":["furniture","beds"],"brand":"Annibale Colombo","sku":"FUR-ANN-ANN-011","weight":10,"dimensions":{"width":28.16,"height":25.36,"depth":17.28},"warrantyInformation":"1 year warranty","shippingInformation":"Ships in 1 month","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Christopher West","reviewerEmail":"christopher.west@x.dummyjson.com"},{"rating":4,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Vivian Carter","reviewerEmail":"vivian.carter@x.dummyjson.com"},{"rating":1,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Mason Wright","reviewerEmail":"mason.wright@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":1,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"3610757456581","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp","https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/2.webp","https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp"},{"id":12,"title":"Annibale Colombo Sofa","description":"The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.","category":"furniture","price":2499.99,"discountPercentage":14.4,"rating":3.92,"stock":60,"tags":["furniture","sofas"],"brand":"Annibale Colombo","sku":"FUR-ANN-ANN-012","weight":6,"dimensions":{"width":12.75,"height":20.55,"depth":19.06},"warrantyInformation":"Lifetime warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Very unhappy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Christian Perez","reviewerEmail":"christian.perez@x.dummyjson.com"},{"rating":5,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Lillian Bishop","reviewerEmail":"lillian.bishop@x.dummyjson.com"},{"rating":1,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Lillian Simmons","reviewerEmail":"lillian.simmons@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":1,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"1777662847736","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp","https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/2.webp","https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp"},{"id":13,"title":"Bedside Table African Cherry","description":"The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.","category":"furniture","price":299.99,"discountPercentage":19.09,"rating":2.87,"stock":64,"tags":["furniture","bedside tables"],"brand":"Furniture Co.","sku":"FUR-FUR-BED-013","weight":2,"dimensions":{"width":13.47,"height":24.99,"depth":27.35},"warrantyInformation":"5 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Aaliyah Hanson","reviewerEmail":"aaliyah.hanson@x.dummyjson.com"},{"rating":4,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Liam Smith","reviewerEmail":"liam.smith@x.dummyjson.com"},{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Avery Barnes","reviewerEmail":"avery.barnes@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":3,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"6441287925979","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp","https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/2.webp","https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp"},{"id":14,"title":"Knoll Saarinen Executive Conference Chair","description":"The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.","category":"furniture","price":499.99,"discountPercentage":2.01,"rating":4.88,"stock":26,"tags":["furniture","office chairs"],"brand":"Knoll","sku":"FUR-KNO-KNO-014","weight":10,"dimensions":{"width":13.81,"height":7.5,"depth":5.62},"warrantyInformation":"2 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Waste of money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ella Cook","reviewerEmail":"ella.cook@x.dummyjson.com"},{"rating":2,"comment":"Very dissatisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Clara Berry","reviewerEmail":"clara.berry@x.dummyjson.com"},{"rating":5,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Elena Long","reviewerEmail":"elena.long@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":5,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"8919386859966","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp","https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/2.webp","https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp"},{"id":15,"title":"Wooden Bathroom Sink With Mirror","description":"The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.","category":"furniture","price":799.99,"discountPercentage":8.8,"rating":3.59,"stock":7,"tags":["furniture","bathroom"],"brand":"Bath Trends","sku":"FUR-BAT-WOO-015","weight":10,"dimensions":{"width":7.98,"height":8.88,"depth":28.46},"warrantyInformation":"3 year warranty","shippingInformation":"Ships in 3-5 business days","availabilityStatus":"Low Stock","reviews":[{"rating":4,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Logan Torres","reviewerEmail":"logan.torres@x.dummyjson.com"},{"rating":5,"comment":"Very pleased!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Aria Parker","reviewerEmail":"aria.parker@x.dummyjson.com"},{"rating":3,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Dylan Wells","reviewerEmail":"dylan.wells@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":2,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"1958104402873","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/1.webp","https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/2.webp","https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp"},{"id":16,"title":"Apple","description":"Fresh and crisp apples, perfect for snacking or incorporating into various recipes.","category":"groceries","price":1.99,"discountPercentage":12.62,"rating":4.19,"stock":8,"tags":["fruits"],"sku":"GRO-BRD-APP-016","weight":9,"dimensions":{"width":13.66,"height":11.01,"depth":9.73},"warrantyInformation":"3 year warranty","shippingInformation":"Ships in 2 weeks","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Very satisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Sophia Brown","reviewerEmail":"sophia.brown@x.dummyjson.com"},{"rating":1,"comment":"Very dissatisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Scarlett Bowman","reviewerEmail":"scarlett.bowman@x.dummyjson.com"},{"rating":3,"comment":"Very unhappy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"William Gonzalez","reviewerEmail":"william.gonzalez@x.dummyjson.com"}],"returnPolicy":"90 days return policy","minimumOrderQuantity":7,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"7962803553314","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/apple/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp"},{"id":17,"title":"Beef Steak","description":"High-quality beef steak, great for grilling or cooking to your preferred level of doneness.","category":"groceries","price":12.99,"discountPercentage":9.61,"rating":4.47,"stock":86,"tags":["meat"],"sku":"GRO-BRD-BEE-017","weight":10,"dimensions":{"width":18.9,"height":5.77,"depth":18.57},"warrantyInformation":"3 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Tyler","reviewerEmail":"eleanor.tyler@x.dummyjson.com"},{"rating":4,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Alexander Jones","reviewerEmail":"alexander.jones@x.dummyjson.com"},{"rating":5,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Natalie Harris","reviewerEmail":"natalie.harris@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":43,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"5640063409695","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/beef-steak/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.webp"},{"id":18,"title":"Cat Food","description":"Nutritious cat food formulated to meet the dietary needs of your feline friend.","category":"groceries","price":8.99,"discountPercentage":9.58,"rating":3.13,"stock":46,"tags":["pet supplies","cat food"],"sku":"GRO-BRD-FOO-018","weight":10,"dimensions":{"width":18.08,"height":9.26,"depth":21.86},"warrantyInformation":"1 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Noah Lewis","reviewerEmail":"noah.lewis@x.dummyjson.com"},{"rating":3,"comment":"Very unhappy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ruby Andrews","reviewerEmail":"ruby.andrews@x.dummyjson.com"},{"rating":2,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ethan Thompson","reviewerEmail":"ethan.thompson@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":18,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"1483991328610","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/cat-food/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/cat-food/thumbnail.webp"},{"id":19,"title":"Chicken Meat","description":"Fresh and tender chicken meat, suitable for various culinary preparations.","category":"groceries","price":9.99,"discountPercentage":13.7,"rating":3.19,"stock":97,"tags":["meat"],"sku":"GRO-BRD-CHI-019","weight":1,"dimensions":{"width":11.03,"height":22.11,"depth":16.01},"warrantyInformation":"1 year warranty","shippingInformation":"Ships in 1 month","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Mateo Bennett","reviewerEmail":"mateo.bennett@x.dummyjson.com"},{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Jackson Evans","reviewerEmail":"jackson.evans@x.dummyjson.com"},{"rating":3,"comment":"Not worth the price!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Sadie Morales","reviewerEmail":"sadie.morales@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":22,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"8829514594521","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/chicken-meat/1.webp","https://cdn.dummyjson.com/product-images/groceries/chicken-meat/2.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.webp"},{"id":20,"title":"Cooking Oil","description":"Versatile cooking oil suitable for frying, sautéing, and various culinary applications.","category":"groceries","price":4.99,"discountPercentage":9.33,"rating":4.8,"stock":10,"tags":["cooking essentials"],"sku":"GRO-BRD-COO-020","weight":5,"dimensions":{"width":19.95,"height":27.54,"depth":24.86},"warrantyInformation":"Lifetime warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Very happy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Victoria McDonald","reviewerEmail":"victoria.mcdonald@x.dummyjson.com"},{"rating":2,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Hazel Evans","reviewerEmail":"hazel.evans@x.dummyjson.com"},{"rating":5,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Zoe Bennett","reviewerEmail":"zoe.bennett@x.dummyjson.com"}],"returnPolicy":"30 days return policy","minimumOrderQuantity":46,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"4874727824518","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/cooking-oil/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.webp"},{"id":21,"title":"Cucumber","description":"Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.","category":"groceries","price":1.49,"discountPercentage":0.16,"rating":4.07,"stock":84,"tags":["vegetables"],"sku":"GRO-BRD-CUC-021","weight":4,"dimensions":{"width":12.8,"height":28.38,"depth":21.34},"warrantyInformation":"2 year warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Lincoln Kelly","reviewerEmail":"lincoln.kelly@x.dummyjson.com"},{"rating":4,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Savannah Gomez","reviewerEmail":"savannah.gomez@x.dummyjson.com"},{"rating":2,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"James Davis","reviewerEmail":"james.davis@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":2,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"5300066378225","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/cucumber/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/cucumber/thumbnail.webp"},{"id":22,"title":"Dog Food","description":"Specially formulated dog food designed to provide essential nutrients for your canine companion.","category":"groceries","price":10.99,"discountPercentage":10.27,"rating":4.55,"stock":71,"tags":["pet supplies","dog food"],"sku":"GRO-BRD-FOO-022","weight":10,"dimensions":{"width":16.93,"height":27.15,"depth":9.29},"warrantyInformation":"No warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nicholas Edwards","reviewerEmail":"nicholas.edwards@x.dummyjson.com"},{"rating":5,"comment":"Awesome product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Zachary Lee","reviewerEmail":"zachary.lee@x.dummyjson.com"},{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nova Cooper","reviewerEmail":"nova.cooper@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":43,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"5906686116469","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/dog-food/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/dog-food/thumbnail.webp"},{"id":23,"title":"Eggs","description":"Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.","category":"groceries","price":2.99,"discountPercentage":11.05,"rating":2.53,"stock":9,"tags":["dairy"],"sku":"GRO-BRD-EGG-023","weight":2,"dimensions":{"width":11.42,"height":7.44,"depth":16.95},"warrantyInformation":"1 week warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Disappointing product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Penelope King","reviewerEmail":"penelope.king@x.dummyjson.com"},{"rating":3,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Tyler","reviewerEmail":"eleanor.tyler@x.dummyjson.com"},{"rating":4,"comment":"Very pleased!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Benjamin Foster","reviewerEmail":"benjamin.foster@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":32,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"3478638588469","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/eggs/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.webp"},{"id":24,"title":"Fish Steak","description":"Quality fish steak, suitable for grilling, baking, or pan-searing.","category":"groceries","price":14.99,"discountPercentage":4.23,"rating":3.78,"stock":74,"tags":["seafood"],"sku":"GRO-BRD-FIS-024","weight":6,"dimensions":{"width":14.95,"height":26.31,"depth":11.27},"warrantyInformation":"1 month warranty","shippingInformation":"Ships in 3-5 business days","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Would not buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Caleb Perkins","reviewerEmail":"caleb.perkins@x.dummyjson.com"},{"rating":5,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Isabella Jackson","reviewerEmail":"isabella.jackson@x.dummyjson.com"},{"rating":4,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nathan Dixon","reviewerEmail":"nathan.dixon@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":50,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"9595036192098","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/fish-steak/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/fish-steak/thumbnail.webp"},{"id":25,"title":"Green Bell Pepper","description":"Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.","category":"groceries","price":1.29,"discountPercentage":0.16,"rating":3.25,"stock":33,"tags":["vegetables"],"sku":"GRO-BRD-GRE-025","weight":2,"dimensions":{"width":15.33,"height":26.65,"depth":14.44},"warrantyInformation":"1 month warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Avery Carter","reviewerEmail":"avery.carter@x.dummyjson.com"},{"rating":3,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Henry Hill","reviewerEmail":"henry.hill@x.dummyjson.com"},{"rating":5,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Addison Wright","reviewerEmail":"addison.wright@x.dummyjson.com"}],"returnPolicy":"30 days return policy","minimumOrderQuantity":12,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"2365227493323","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp"},{"id":26,"title":"Green Chili Pepper","description":"Spicy green chili pepper, ideal for adding heat to your favorite recipes.","category":"groceries","price":0.99,"discountPercentage":1,"rating":3.66,"stock":3,"tags":["vegetables"],"sku":"GRO-BRD-GRE-026","weight":7,"dimensions":{"width":15.38,"height":18.12,"depth":19.92},"warrantyInformation":"2 year warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"Low Stock","reviews":[{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Luna Russell","reviewerEmail":"luna.russell@x.dummyjson.com"},{"rating":1,"comment":"Waste of money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Noah Lewis","reviewerEmail":"noah.lewis@x.dummyjson.com"},{"rating":3,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Clara Berry","reviewerEmail":"clara.berry@x.dummyjson.com"}],"returnPolicy":"30 days return policy","minimumOrderQuantity":39,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"9335000538563","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/thumbnail.webp"},{"id":27,"title":"Honey Jar","description":"Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.","category":"groceries","price":6.99,"discountPercentage":14.4,"rating":3.97,"stock":34,"tags":["condiments"],"sku":"GRO-BRD-HON-027","weight":2,"dimensions":{"width":9.28,"height":21.72,"depth":17.74},"warrantyInformation":"1 month warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":1,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Autumn Gomez","reviewerEmail":"autumn.gomez@x.dummyjson.com"},{"rating":4,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Benjamin Wilson","reviewerEmail":"benjamin.wilson@x.dummyjson.com"},{"rating":2,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nicholas Edwards","reviewerEmail":"nicholas.edwards@x.dummyjson.com"}],"returnPolicy":"90 days return policy","minimumOrderQuantity":47,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"6354306346329","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/honey-jar/thumbnail.webp"},{"id":28,"title":"Ice Cream","description":"Creamy and delicious ice cream, available in various flavors for a delightful treat.","category":"groceries","price":5.49,"discountPercentage":8.69,"rating":3.39,"stock":27,"tags":["desserts"],"sku":"GRO-BRD-CRE-028","weight":1,"dimensions":{"width":14.83,"height":15.07,"depth":24.2},"warrantyInformation":"1 month warranty","shippingInformation":"Ships in 2 weeks","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Very pleased!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Elijah Cruz","reviewerEmail":"elijah.cruz@x.dummyjson.com"},{"rating":4,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Jace Smith","reviewerEmail":"jace.smith@x.dummyjson.com"},{"rating":5,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Sadie Morales","reviewerEmail":"sadie.morales@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":42,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"0788954559076","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/ice-cream/1.webp","https://cdn.dummyjson.com/product-images/groceries/ice-cream/2.webp","https://cdn.dummyjson.com/product-images/groceries/ice-cream/3.webp","https://cdn.dummyjson.com/product-images/groceries/ice-cream/4.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp"},{"id":29,"title":"Juice","description":"Refreshing fruit juice, packed with vitamins and great for staying hydrated.","category":"groceries","price":3.99,"discountPercentage":12.06,"rating":3.94,"stock":50,"tags":["beverages"],"sku":"GRO-BRD-JUI-029","weight":1,"dimensions":{"width":18.56,"height":21.46,"depth":28.02},"warrantyInformation":"6 months warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nolan Gonzalez","reviewerEmail":"nolan.gonzalez@x.dummyjson.com"},{"rating":4,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Bella Grant","reviewerEmail":"bella.grant@x.dummyjson.com"},{"rating":5,"comment":"Awesome product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Aria Flores","reviewerEmail":"aria.flores@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":25,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"6936112580956","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/juice/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/juice/thumbnail.webp"},{"id":30,"title":"Kiwi","description":"Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.","category":"groceries","price":2.49,"discountPercentage":15.22,"rating":4.93,"stock":99,"tags":["fruits"],"sku":"GRO-BRD-KIW-030","weight":5,"dimensions":{"width":19.4,"height":18.67,"depth":17.13},"warrantyInformation":"6 months warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Emily Brown","reviewerEmail":"emily.brown@x.dummyjson.com"},{"rating":2,"comment":"Would not buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Jackson Morales","reviewerEmail":"jackson.morales@x.dummyjson.com"},{"rating":4,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nora Russell","reviewerEmail":"nora.russell@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":30,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"2530169917252","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/kiwi/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.webp"}],"total":194,"skip":0,"limit":30}); 
+  }
+  jsonTreeCreate10();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          JSON is valid. Root node type: OBJECT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Raw response JSON captured for schema generation.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-11'></div>
+ <script>
+  function jsonTreeCreate11() { 
+   document.getElementById('code-block-json-11').innerHTML = JSONTree.create({"products":[{"id":1,"title":"Essence Mascara Lash Princess","description":"The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.","category":"beauty","price":9.99,"discountPercentage":10.48,"rating":2.56,"stock":99,"tags":["beauty","mascara"],"brand":"Essence","sku":"BEA-ESS-ESS-001","weight":4,"dimensions":{"width":15.14,"height":13.08,"depth":22.99},"warrantyInformation":"1 week warranty","shippingInformation":"Ships in 3-5 business days","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Collins","reviewerEmail":"eleanor.collins@x.dummyjson.com"},{"rating":4,"comment":"Very satisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Lucas Gordon","reviewerEmail":"lucas.gordon@x.dummyjson.com"},{"rating":5,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Collins","reviewerEmail":"eleanor.collins@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":48,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"5784719087687","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp"},{"id":2,"title":"Eyeshadow Palette with Mirror","description":"The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.","category":"beauty","price":19.99,"discountPercentage":18.19,"rating":2.86,"stock":34,"tags":["beauty","eyeshadow"],"brand":"Glamour Beauty","sku":"BEA-GLA-EYE-002","weight":9,"dimensions":{"width":9.26,"height":22.47,"depth":27.67},"warrantyInformation":"1 year warranty","shippingInformation":"Ships in 2 weeks","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Savannah Gomez","reviewerEmail":"savannah.gomez@x.dummyjson.com"},{"rating":4,"comment":"Awesome product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Christian Perez","reviewerEmail":"christian.perez@x.dummyjson.com"},{"rating":1,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nicholas Bailey","reviewerEmail":"nicholas.bailey@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":20,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"9170275171413","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp"},{"id":3,"title":"Powder Canister","description":"The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.","category":"beauty","price":14.99,"discountPercentage":9.84,"rating":4.64,"stock":89,"tags":["beauty","face powder"],"brand":"Velvet Touch","sku":"BEA-VEL-POW-003","weight":8,"dimensions":{"width":29.27,"height":27.93,"depth":20.59},"warrantyInformation":"3 months warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Alexander Jones","reviewerEmail":"alexander.jones@x.dummyjson.com"},{"rating":5,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Elijah Cruz","reviewerEmail":"elijah.cruz@x.dummyjson.com"},{"rating":1,"comment":"Very dissatisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Avery Perez","reviewerEmail":"avery.perez@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":22,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"8418883906837","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp"},{"id":4,"title":"Red Lipstick","description":"The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.","category":"beauty","price":12.99,"discountPercentage":12.16,"rating":4.36,"stock":91,"tags":["beauty","lipstick"],"brand":"Chic Cosmetics","sku":"BEA-CHI-LIP-004","weight":1,"dimensions":{"width":18.11,"height":28.38,"depth":22.17},"warrantyInformation":"3 year warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Liam Garcia","reviewerEmail":"liam.garcia@x.dummyjson.com"},{"rating":5,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ruby Andrews","reviewerEmail":"ruby.andrews@x.dummyjson.com"},{"rating":5,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Clara Berry","reviewerEmail":"clara.berry@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":40,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"9467746727219","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp"},{"id":5,"title":"Red Nail Polish","description":"The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.","category":"beauty","price":8.99,"discountPercentage":11.44,"rating":4.32,"stock":79,"tags":["beauty","nail polish"],"brand":"Nail Couture","sku":"BEA-NAI-NAI-005","weight":8,"dimensions":{"width":21.63,"height":16.48,"depth":29.84},"warrantyInformation":"1 month warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Benjamin Wilson","reviewerEmail":"benjamin.wilson@x.dummyjson.com"},{"rating":5,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Liam Smith","reviewerEmail":"liam.smith@x.dummyjson.com"},{"rating":1,"comment":"Very unhappy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Clara Berry","reviewerEmail":"clara.berry@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":22,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"4063010628104","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/thumbnail.webp"},{"id":6,"title":"Calvin Klein CK One","description":"CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.","category":"fragrances","price":49.99,"discountPercentage":1.89,"rating":4.37,"stock":29,"tags":["fragrances","perfumes"],"brand":"Calvin Klein","sku":"FRA-CAL-CAL-006","weight":7,"dimensions":{"width":29.36,"height":27.76,"depth":20.72},"warrantyInformation":"1 week warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Layla Young","reviewerEmail":"layla.young@x.dummyjson.com"},{"rating":4,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Daniel Cook","reviewerEmail":"daniel.cook@x.dummyjson.com"},{"rating":3,"comment":"Not as described!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Jacob Cooper","reviewerEmail":"jacob.cooper@x.dummyjson.com"}],"returnPolicy":"90 days return policy","minimumOrderQuantity":9,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"2451534060749","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp","https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/2.webp","https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp"},{"id":7,"title":"Chanel Coco Noir Eau De","description":"Coco Noir by Chanel is an elegant and mysterious fragrance, featuring notes of grapefruit, rose, and sandalwood. Perfect for evening occasions.","category":"fragrances","price":129.99,"discountPercentage":16.51,"rating":4.26,"stock":58,"tags":["fragrances","perfumes"],"brand":"Chanel","sku":"FRA-CHA-CHA-007","weight":7,"dimensions":{"width":24.5,"height":25.7,"depth":25.98},"warrantyInformation":"3 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ruby Andrews","reviewerEmail":"ruby.andrews@x.dummyjson.com"},{"rating":5,"comment":"Awesome product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Leah Henderson","reviewerEmail":"leah.henderson@x.dummyjson.com"},{"rating":5,"comment":"Very happy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Xavier Wright","reviewerEmail":"xavier.wright@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":1,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"4091737746820","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp","https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/2.webp","https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp"},{"id":8,"title":"Dior J'adore","description":"J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-ylang, rose, and jasmine. It embodies femininity and sophistication.","category":"fragrances","price":89.99,"discountPercentage":14.72,"rating":3.8,"stock":98,"tags":["fragrances","perfumes"],"brand":"Dior","sku":"FRA-DIO-DIO-008","weight":4,"dimensions":{"width":27.67,"height":28.28,"depth":11.83},"warrantyInformation":"1 week warranty","shippingInformation":"Ships in 2 weeks","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nicholas Bailey","reviewerEmail":"nicholas.bailey@x.dummyjson.com"},{"rating":4,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Penelope Harper","reviewerEmail":"penelope.harper@x.dummyjson.com"},{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Emma Miller","reviewerEmail":"emma.miller@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":10,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"1445086097250","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/1.webp","https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/2.webp","https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp"},{"id":9,"title":"Dolce Shine Eau de","description":"Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring notes of mango, jasmine, and blonde woods. It's a joyful and youthful scent.","category":"fragrances","price":69.99,"discountPercentage":0.62,"rating":3.96,"stock":4,"tags":["fragrances","perfumes"],"brand":"Dolce & Gabbana","sku":"FRA-DOL-DOL-009","weight":6,"dimensions":{"width":27.28,"height":29.88,"depth":18.3},"warrantyInformation":"3 year warranty","shippingInformation":"Ships in 1 month","availabilityStatus":"Low Stock","reviews":[{"rating":4,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Mateo Bennett","reviewerEmail":"mateo.bennett@x.dummyjson.com"},{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nolan Gonzalez","reviewerEmail":"nolan.gonzalez@x.dummyjson.com"},{"rating":5,"comment":"Very happy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Aurora Lawson","reviewerEmail":"aurora.lawson@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":2,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"3023868210708","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/1.webp","https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/2.webp","https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp"},{"id":10,"title":"Gucci Bloom Eau de","description":"Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tuberose, jasmine, and Rangoon creeper. It's a modern and romantic scent.","category":"fragrances","price":79.99,"discountPercentage":14.39,"rating":2.74,"stock":91,"tags":["fragrances","perfumes"],"brand":"Gucci","sku":"FRA-GUC-GUC-010","weight":7,"dimensions":{"width":20.92,"height":21.68,"depth":11.2},"warrantyInformation":"6 months warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":1,"comment":"Very dissatisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Cameron Perez","reviewerEmail":"cameron.perez@x.dummyjson.com"},{"rating":5,"comment":"Very happy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Daniel Cook","reviewerEmail":"daniel.cook@x.dummyjson.com"},{"rating":4,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Addison Wright","reviewerEmail":"addison.wright@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":2,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"3170832177880","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp","https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/2.webp","https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp"},{"id":11,"title":"Annibale Colombo Bed","description":"The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with high-quality materials for a comfortable and stylish bedroom.","category":"furniture","price":1899.99,"discountPercentage":8.57,"rating":4.77,"stock":88,"tags":["furniture","beds"],"brand":"Annibale Colombo","sku":"FUR-ANN-ANN-011","weight":10,"dimensions":{"width":28.16,"height":25.36,"depth":17.28},"warrantyInformation":"1 year warranty","shippingInformation":"Ships in 1 month","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Christopher West","reviewerEmail":"christopher.west@x.dummyjson.com"},{"rating":4,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Vivian Carter","reviewerEmail":"vivian.carter@x.dummyjson.com"},{"rating":1,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Mason Wright","reviewerEmail":"mason.wright@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":1,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"3610757456581","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp","https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/2.webp","https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp"},{"id":12,"title":"Annibale Colombo Sofa","description":"The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.","category":"furniture","price":2499.99,"discountPercentage":14.4,"rating":3.92,"stock":60,"tags":["furniture","sofas"],"brand":"Annibale Colombo","sku":"FUR-ANN-ANN-012","weight":6,"dimensions":{"width":12.75,"height":20.55,"depth":19.06},"warrantyInformation":"Lifetime warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Very unhappy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Christian Perez","reviewerEmail":"christian.perez@x.dummyjson.com"},{"rating":5,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Lillian Bishop","reviewerEmail":"lillian.bishop@x.dummyjson.com"},{"rating":1,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Lillian Simmons","reviewerEmail":"lillian.simmons@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":1,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"1777662847736","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp","https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/2.webp","https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp"},{"id":13,"title":"Bedside Table African Cherry","description":"The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.","category":"furniture","price":299.99,"discountPercentage":19.09,"rating":2.87,"stock":64,"tags":["furniture","bedside tables"],"brand":"Furniture Co.","sku":"FUR-FUR-BED-013","weight":2,"dimensions":{"width":13.47,"height":24.99,"depth":27.35},"warrantyInformation":"5 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Aaliyah Hanson","reviewerEmail":"aaliyah.hanson@x.dummyjson.com"},{"rating":4,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Liam Smith","reviewerEmail":"liam.smith@x.dummyjson.com"},{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Avery Barnes","reviewerEmail":"avery.barnes@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":3,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"6441287925979","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp","https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/2.webp","https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp"},{"id":14,"title":"Knoll Saarinen Executive Conference Chair","description":"The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.","category":"furniture","price":499.99,"discountPercentage":2.01,"rating":4.88,"stock":26,"tags":["furniture","office chairs"],"brand":"Knoll","sku":"FUR-KNO-KNO-014","weight":10,"dimensions":{"width":13.81,"height":7.5,"depth":5.62},"warrantyInformation":"2 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Waste of money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ella Cook","reviewerEmail":"ella.cook@x.dummyjson.com"},{"rating":2,"comment":"Very dissatisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Clara Berry","reviewerEmail":"clara.berry@x.dummyjson.com"},{"rating":5,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Elena Long","reviewerEmail":"elena.long@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":5,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"8919386859966","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp","https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/2.webp","https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp"},{"id":15,"title":"Wooden Bathroom Sink With Mirror","description":"The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.","category":"furniture","price":799.99,"discountPercentage":8.8,"rating":3.59,"stock":7,"tags":["furniture","bathroom"],"brand":"Bath Trends","sku":"FUR-BAT-WOO-015","weight":10,"dimensions":{"width":7.98,"height":8.88,"depth":28.46},"warrantyInformation":"3 year warranty","shippingInformation":"Ships in 3-5 business days","availabilityStatus":"Low Stock","reviews":[{"rating":4,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Logan Torres","reviewerEmail":"logan.torres@x.dummyjson.com"},{"rating":5,"comment":"Very pleased!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Aria Parker","reviewerEmail":"aria.parker@x.dummyjson.com"},{"rating":3,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Dylan Wells","reviewerEmail":"dylan.wells@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":2,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"1958104402873","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/1.webp","https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/2.webp","https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/3.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp"},{"id":16,"title":"Apple","description":"Fresh and crisp apples, perfect for snacking or incorporating into various recipes.","category":"groceries","price":1.99,"discountPercentage":12.62,"rating":4.19,"stock":8,"tags":["fruits"],"sku":"GRO-BRD-APP-016","weight":9,"dimensions":{"width":13.66,"height":11.01,"depth":9.73},"warrantyInformation":"3 year warranty","shippingInformation":"Ships in 2 weeks","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Very satisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Sophia Brown","reviewerEmail":"sophia.brown@x.dummyjson.com"},{"rating":1,"comment":"Very dissatisfied!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Scarlett Bowman","reviewerEmail":"scarlett.bowman@x.dummyjson.com"},{"rating":3,"comment":"Very unhappy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"William Gonzalez","reviewerEmail":"william.gonzalez@x.dummyjson.com"}],"returnPolicy":"90 days return policy","minimumOrderQuantity":7,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"7962803553314","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/apple/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp"},{"id":17,"title":"Beef Steak","description":"High-quality beef steak, great for grilling or cooking to your preferred level of doneness.","category":"groceries","price":12.99,"discountPercentage":9.61,"rating":4.47,"stock":86,"tags":["meat"],"sku":"GRO-BRD-BEE-017","weight":10,"dimensions":{"width":18.9,"height":5.77,"depth":18.57},"warrantyInformation":"3 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Tyler","reviewerEmail":"eleanor.tyler@x.dummyjson.com"},{"rating":4,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Alexander Jones","reviewerEmail":"alexander.jones@x.dummyjson.com"},{"rating":5,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Natalie Harris","reviewerEmail":"natalie.harris@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":43,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"5640063409695","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/beef-steak/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.webp"},{"id":18,"title":"Cat Food","description":"Nutritious cat food formulated to meet the dietary needs of your feline friend.","category":"groceries","price":8.99,"discountPercentage":9.58,"rating":3.13,"stock":46,"tags":["pet supplies","cat food"],"sku":"GRO-BRD-FOO-018","weight":10,"dimensions":{"width":18.08,"height":9.26,"depth":21.86},"warrantyInformation":"1 year warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Noah Lewis","reviewerEmail":"noah.lewis@x.dummyjson.com"},{"rating":3,"comment":"Very unhappy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ruby Andrews","reviewerEmail":"ruby.andrews@x.dummyjson.com"},{"rating":2,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Ethan Thompson","reviewerEmail":"ethan.thompson@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":18,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"1483991328610","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/cat-food/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/cat-food/thumbnail.webp"},{"id":19,"title":"Chicken Meat","description":"Fresh and tender chicken meat, suitable for various culinary preparations.","category":"groceries","price":9.99,"discountPercentage":13.7,"rating":3.19,"stock":97,"tags":["meat"],"sku":"GRO-BRD-CHI-019","weight":1,"dimensions":{"width":11.03,"height":22.11,"depth":16.01},"warrantyInformation":"1 year warranty","shippingInformation":"Ships in 1 month","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Mateo Bennett","reviewerEmail":"mateo.bennett@x.dummyjson.com"},{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Jackson Evans","reviewerEmail":"jackson.evans@x.dummyjson.com"},{"rating":3,"comment":"Not worth the price!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Sadie Morales","reviewerEmail":"sadie.morales@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":22,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"8829514594521","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/chicken-meat/1.webp","https://cdn.dummyjson.com/product-images/groceries/chicken-meat/2.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.webp"},{"id":20,"title":"Cooking Oil","description":"Versatile cooking oil suitable for frying, sautéing, and various culinary applications.","category":"groceries","price":4.99,"discountPercentage":9.33,"rating":4.8,"stock":10,"tags":["cooking essentials"],"sku":"GRO-BRD-COO-020","weight":5,"dimensions":{"width":19.95,"height":27.54,"depth":24.86},"warrantyInformation":"Lifetime warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Very happy with my purchase!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Victoria McDonald","reviewerEmail":"victoria.mcdonald@x.dummyjson.com"},{"rating":2,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Hazel Evans","reviewerEmail":"hazel.evans@x.dummyjson.com"},{"rating":5,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Zoe Bennett","reviewerEmail":"zoe.bennett@x.dummyjson.com"}],"returnPolicy":"30 days return policy","minimumOrderQuantity":46,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"4874727824518","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/cooking-oil/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.webp"},{"id":21,"title":"Cucumber","description":"Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.","category":"groceries","price":1.49,"discountPercentage":0.16,"rating":4.07,"stock":84,"tags":["vegetables"],"sku":"GRO-BRD-CUC-021","weight":4,"dimensions":{"width":12.8,"height":28.38,"depth":21.34},"warrantyInformation":"2 year warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Lincoln Kelly","reviewerEmail":"lincoln.kelly@x.dummyjson.com"},{"rating":4,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Savannah Gomez","reviewerEmail":"savannah.gomez@x.dummyjson.com"},{"rating":2,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"James Davis","reviewerEmail":"james.davis@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":2,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"5300066378225","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/cucumber/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/cucumber/thumbnail.webp"},{"id":22,"title":"Dog Food","description":"Specially formulated dog food designed to provide essential nutrients for your canine companion.","category":"groceries","price":10.99,"discountPercentage":10.27,"rating":4.55,"stock":71,"tags":["pet supplies","dog food"],"sku":"GRO-BRD-FOO-022","weight":10,"dimensions":{"width":16.93,"height":27.15,"depth":9.29},"warrantyInformation":"No warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nicholas Edwards","reviewerEmail":"nicholas.edwards@x.dummyjson.com"},{"rating":5,"comment":"Awesome product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Zachary Lee","reviewerEmail":"zachary.lee@x.dummyjson.com"},{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nova Cooper","reviewerEmail":"nova.cooper@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":43,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"5906686116469","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/dog-food/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/dog-food/thumbnail.webp"},{"id":23,"title":"Eggs","description":"Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.","category":"groceries","price":2.99,"discountPercentage":11.05,"rating":2.53,"stock":9,"tags":["dairy"],"sku":"GRO-BRD-EGG-023","weight":2,"dimensions":{"width":11.42,"height":7.44,"depth":16.95},"warrantyInformation":"1 week warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":3,"comment":"Disappointing product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Penelope King","reviewerEmail":"penelope.king@x.dummyjson.com"},{"rating":3,"comment":"Poor quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Eleanor Tyler","reviewerEmail":"eleanor.tyler@x.dummyjson.com"},{"rating":4,"comment":"Very pleased!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Benjamin Foster","reviewerEmail":"benjamin.foster@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":32,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"3478638588469","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/eggs/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.webp"},{"id":24,"title":"Fish Steak","description":"Quality fish steak, suitable for grilling, baking, or pan-searing.","category":"groceries","price":14.99,"discountPercentage":4.23,"rating":3.78,"stock":74,"tags":["seafood"],"sku":"GRO-BRD-FIS-024","weight":6,"dimensions":{"width":14.95,"height":26.31,"depth":11.27},"warrantyInformation":"1 month warranty","shippingInformation":"Ships in 3-5 business days","availabilityStatus":"In Stock","reviews":[{"rating":2,"comment":"Would not buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Caleb Perkins","reviewerEmail":"caleb.perkins@x.dummyjson.com"},{"rating":5,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Isabella Jackson","reviewerEmail":"isabella.jackson@x.dummyjson.com"},{"rating":4,"comment":"Great value for money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nathan Dixon","reviewerEmail":"nathan.dixon@x.dummyjson.com"}],"returnPolicy":"60 days return policy","minimumOrderQuantity":50,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"9595036192098","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/fish-steak/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/fish-steak/thumbnail.webp"},{"id":25,"title":"Green Bell Pepper","description":"Fresh and vibrant green bell pepper, perfect for adding color and flavor to your dishes.","category":"groceries","price":1.29,"discountPercentage":0.16,"rating":3.25,"stock":33,"tags":["vegetables"],"sku":"GRO-BRD-GRE-025","weight":2,"dimensions":{"width":15.33,"height":26.65,"depth":14.44},"warrantyInformation":"1 month warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Avery Carter","reviewerEmail":"avery.carter@x.dummyjson.com"},{"rating":3,"comment":"Would not recommend!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Henry Hill","reviewerEmail":"henry.hill@x.dummyjson.com"},{"rating":5,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Addison Wright","reviewerEmail":"addison.wright@x.dummyjson.com"}],"returnPolicy":"30 days return policy","minimumOrderQuantity":12,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"2365227493323","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp"},{"id":26,"title":"Green Chili Pepper","description":"Spicy green chili pepper, ideal for adding heat to your favorite recipes.","category":"groceries","price":0.99,"discountPercentage":1,"rating":3.66,"stock":3,"tags":["vegetables"],"sku":"GRO-BRD-GRE-026","weight":7,"dimensions":{"width":15.38,"height":18.12,"depth":19.92},"warrantyInformation":"2 year warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"Low Stock","reviews":[{"rating":4,"comment":"Great product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Luna Russell","reviewerEmail":"luna.russell@x.dummyjson.com"},{"rating":1,"comment":"Waste of money!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Noah Lewis","reviewerEmail":"noah.lewis@x.dummyjson.com"},{"rating":3,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Clara Berry","reviewerEmail":"clara.berry@x.dummyjson.com"}],"returnPolicy":"30 days return policy","minimumOrderQuantity":39,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"9335000538563","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/thumbnail.webp"},{"id":27,"title":"Honey Jar","description":"Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzling over food.","category":"groceries","price":6.99,"discountPercentage":14.4,"rating":3.97,"stock":34,"tags":["condiments"],"sku":"GRO-BRD-HON-027","weight":2,"dimensions":{"width":9.28,"height":21.72,"depth":17.74},"warrantyInformation":"1 month warranty","shippingInformation":"Ships in 1-2 business days","availabilityStatus":"In Stock","reviews":[{"rating":1,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Autumn Gomez","reviewerEmail":"autumn.gomez@x.dummyjson.com"},{"rating":4,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Benjamin Wilson","reviewerEmail":"benjamin.wilson@x.dummyjson.com"},{"rating":2,"comment":"Very disappointed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nicholas Edwards","reviewerEmail":"nicholas.edwards@x.dummyjson.com"}],"returnPolicy":"90 days return policy","minimumOrderQuantity":47,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"6354306346329","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/honey-jar/thumbnail.webp"},{"id":28,"title":"Ice Cream","description":"Creamy and delicious ice cream, available in various flavors for a delightful treat.","category":"groceries","price":5.49,"discountPercentage":8.69,"rating":3.39,"stock":27,"tags":["desserts"],"sku":"GRO-BRD-CRE-028","weight":1,"dimensions":{"width":14.83,"height":15.07,"depth":24.2},"warrantyInformation":"1 month warranty","shippingInformation":"Ships in 2 weeks","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Very pleased!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Elijah Cruz","reviewerEmail":"elijah.cruz@x.dummyjson.com"},{"rating":4,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Jace Smith","reviewerEmail":"jace.smith@x.dummyjson.com"},{"rating":5,"comment":"Highly impressed!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Sadie Morales","reviewerEmail":"sadie.morales@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":42,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"0788954559076","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/ice-cream/1.webp","https://cdn.dummyjson.com/product-images/groceries/ice-cream/2.webp","https://cdn.dummyjson.com/product-images/groceries/ice-cream/3.webp","https://cdn.dummyjson.com/product-images/groceries/ice-cream/4.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp"},{"id":29,"title":"Juice","description":"Refreshing fruit juice, packed with vitamins and great for staying hydrated.","category":"groceries","price":3.99,"discountPercentage":12.06,"rating":3.94,"stock":50,"tags":["beverages"],"sku":"GRO-BRD-JUI-029","weight":1,"dimensions":{"width":18.56,"height":21.46,"depth":28.02},"warrantyInformation":"6 months warranty","shippingInformation":"Ships in 1 week","availabilityStatus":"In Stock","reviews":[{"rating":5,"comment":"Excellent quality!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nolan Gonzalez","reviewerEmail":"nolan.gonzalez@x.dummyjson.com"},{"rating":4,"comment":"Would buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Bella Grant","reviewerEmail":"bella.grant@x.dummyjson.com"},{"rating":5,"comment":"Awesome product!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Aria Flores","reviewerEmail":"aria.flores@x.dummyjson.com"}],"returnPolicy":"No return policy","minimumOrderQuantity":25,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"6936112580956","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/juice/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/juice/thumbnail.webp"},{"id":30,"title":"Kiwi","description":"Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.","category":"groceries","price":2.49,"discountPercentage":15.22,"rating":4.93,"stock":99,"tags":["fruits"],"sku":"GRO-BRD-KIW-030","weight":5,"dimensions":{"width":19.4,"height":18.67,"depth":17.13},"warrantyInformation":"6 months warranty","shippingInformation":"Ships overnight","availabilityStatus":"In Stock","reviews":[{"rating":4,"comment":"Highly recommended!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Emily Brown","reviewerEmail":"emily.brown@x.dummyjson.com"},{"rating":2,"comment":"Would not buy again!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Jackson Morales","reviewerEmail":"jackson.morales@x.dummyjson.com"},{"rating":4,"comment":"Fast shipping!","date":"2025-04-30T09:41:02.053Z","reviewerName":"Nora Russell","reviewerEmail":"nora.russell@x.dummyjson.com"}],"returnPolicy":"7 days return policy","minimumOrderQuantity":30,"meta":{"createdAt":"2025-04-30T09:41:02.053Z","updatedAt":"2025-04-30T09:41:02.053Z","barcode":"2530169917252","qrCode":"https://cdn.dummyjson.com/public/qr-code.png"},"images":["https://cdn.dummyjson.com/product-images/groceries/kiwi/1.webp"],"thumbnail":"https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.webp"}],"total":194,"skip":0,"limit":30}); 
+  }
+  jsonTreeCreate11();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Actual Schema Generated Successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Actual Schema (pretty):
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-12'></div>
+ <script>
+  function jsonTreeCreate12() { 
+   document.getElementById('code-block-json-12').innerHTML = JSONTree.create({"type":"object","properties":{"products":{"type":"array","items":{"type":"object","properties":{"id":{"type":"number"},"title":{"type":"string"},"description":{"type":"string"},"category":{"type":"string"},"price":{"type":"number"},"discountPercentage":{"type":"number"},"rating":{"type":"number"},"stock":{"type":"number"},"tags":{"type":"array","items":{"type":"string"}},"brand":{"type":"string"},"sku":{"type":"string"},"weight":{"type":"number"},"dimensions":{"type":"object","properties":{"width":{"type":"number"},"height":{"type":"number"},"depth":{"type":"number"}},"required":["width","height","depth"],"additionalProperties":false},"warrantyInformation":{"type":"string"},"shippingInformation":{"type":"string"},"availabilityStatus":{"type":"string"},"reviews":{"type":"array","items":{"type":"object","properties":{"rating":{"type":"number"},"comment":{"type":"string"},"date":{"type":"string"},"reviewerName":{"type":"string"},"reviewerEmail":{"type":"string"}},"required":["rating","comment","date","reviewerName","reviewerEmail"],"additionalProperties":false}},"returnPolicy":{"type":"string"},"minimumOrderQuantity":{"type":"number"},"meta":{"type":"object","properties":{"createdAt":{"type":"string"},"updatedAt":{"type":"string"},"barcode":{"type":"string"},"qrCode":{"type":"string"}},"required":["createdAt","updatedAt","barcode","qrCode"],"additionalProperties":false},"images":{"type":"array","items":{"type":"string"}},"thumbnail":{"type":"string"}},"required":["id","title","description","category","price","discountPercentage","rating","stock","tags","brand","sku","weight","dimensions","warrantyInformation","shippingInformation","availabilityStatus","reviews","returnPolicy","minimumOrderQuantity","meta","images","thumbnail"],"additionalProperties":false}},"total":{"type":"number"},"skip":{"type":"number"},"limit":{"type":"number"}},"required":["products","total","skip","limit"],"additionalProperties":false}); 
+  }
+  jsonTreeCreate12();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Actual Schema Node toString: {"type":"object","properties":{"products":{"type":"array","items":{"type":"object","properties":{"id":{"type":"number"},"title":{"type":"string"},"description":{"type":"string"},"category":{"type":"string"},"price":{"type":"number"},"discountPercentage":{"type":"number"},"rating":{"type":"number"},"stock":{"type":"number"},"tags":{"type":"array","items":{"type":"string"}},"brand":{"type":"string"},"sku":{"type":"string"},"weight":{"type":"number"},"dimensions":{"type":"object","properties":{"width":{"type":"number"},"height":{"type":"number"},"depth":{"type":"number"}},"required":["width","height","depth"],"additionalProperties":false},"warrantyInformation":{"type":"string"},"shippingInformation":{"type":"string"},"availabilityStatus":{"type":"string"},"reviews":{"type":"array","items":{"type":"object","properties":{"rating":{"type":"number"},"comment":{"type":"string"},"date":{"type":"string"},"reviewerName":{"type":"string"},"reviewerEmail":{"type":"string"}},"required":["rating","comment","date","reviewerName","reviewerEmail"],"additionalProperties":false}},"returnPolicy":{"type":"string"},"minimumOrderQuantity":{"type":"number"},"meta":{"type":"object","properties":{"createdAt":{"type":"string"},"updatedAt":{"type":"string"},"barcode":{"type":"string"},"qrCode":{"type":"string"}},"required":["createdAt","updatedAt","barcode","qrCode"],"additionalProperties":false},"images":{"type":"array","items":{"type":"string"}},"thumbnail":{"type":"string"}},"required":["id","title","description","category","price","discountPercentage","rating","stock","tags","brand","sku","weight","dimensions","warrantyInformation","shippingInformation","availabilityStatus","reviews","returnPolicy","minimumOrderQuantity","meta","images","thumbnail"],"additionalProperties":false}},"total":{"type":"number"},"skip":{"type":"number"},"limit":{"type":"number"}},"required":["products","total","skip","limit"],"additionalProperties":false}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Expected Schema Path: Schemas/user-schema_1.json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Expected Schema (pretty):
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-13'></div>
+ <script>
+  function jsonTreeCreate13() { 
+   document.getElementById('code-block-json-13').innerHTML = JSONTree.create({"type":"object","properties":{"products":{"type":"array","items":{"type":"object","properties":{"id":{"type":"number"},"title":{"type":"string"},"description":{"type":"string"},"category":{"type":"string"},"price":{"type":"number"},"discountPercentage":{"type":"number"},"rating":{"type":"number"},"stock":{"type":"number"},"tags":{"type":"array","items":{"type":"string"}},"brand":{"type":"string"},"sku":{"type":"string"},"weight":{"type":"number"},"dimensions":{"type":"object","properties":{"width":{"type":"number"},"height":{"type":"number"},"depth":{"type":"number"}},"additionalProperties":false},"warrantyInformation":{"type":"string"},"shippingInformation":{"type":"string"},"availabilityStatus":{"type":"string"},"reviews":{"type":"array","items":{"type":"object","properties":{"rating":{"type":"number"},"comment":{"type":"string"},"date":{"type":"string"},"reviewerName":{"type":"string"},"reviewerEmail":{"type":"string"}},"additionalProperties":false}},"returnPolicy":{"type":"string"},"minimumOrderQuantity":{"type":"number"},"meta":{"type":"object","properties":{"createdAt":{"type":"string"},"updatedAt":{"type":"string"},"barcode":{"type":"string"},"qrCode":{"type":"string"}},"additionalProperties":false},"images":{"type":"array","items":{"type":"string"}},"thumbnail":{"type":"string"}},"additionalProperties":false}},"total":{"type":"number"},"skip":{"type":"number"},"limit":{"type":"number"}},"additionalProperties":false}); 
+  }
+  jsonTreeCreate13();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Schema Validation Passed (SchemaCompareUtil)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Schema Validation PASSED (SchemaCompareUtil comparison only)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-14'></div>
+ <script>
+  function jsonTreeCreate14() { 
+   document.getElementById('code-block-json-14').innerHTML = JSONTree.create({"type":"object","properties":{"products":{"type":"array","items":{"type":"object","properties":{"id":{"type":"number"},"title":{"type":"string"},"description":{"type":"string"},"category":{"type":"string"},"price":{"type":"number"},"discountPercentage":{"type":"number"},"rating":{"type":"number"},"stock":{"type":"number"},"tags":{"type":"array","items":{"type":"string"}},"brand":{"type":"string"},"sku":{"type":"string"},"weight":{"type":"number"},"dimensions":{"type":"object","properties":{"width":{"type":"number"},"height":{"type":"number"},"depth":{"type":"number"}},"additionalProperties":false},"warrantyInformation":{"type":"string"},"shippingInformation":{"type":"string"},"availabilityStatus":{"type":"string"},"reviews":{"type":"array","items":{"type":"object","properties":{"rating":{"type":"number"},"comment":{"type":"string"},"date":{"type":"string"},"reviewerName":{"type":"string"},"reviewerEmail":{"type":"string"}},"additionalProperties":false}},"returnPolicy":{"type":"string"},"minimumOrderQuantity":{"type":"number"},"meta":{"type":"object","properties":{"createdAt":{"type":"string"},"updatedAt":{"type":"string"},"barcode":{"type":"string"},"qrCode":{"type":"string"}},"additionalProperties":false},"images":{"type":"array","items":{"type":"string"}},"thumbnail":{"type":"string"}},"additionalProperties":false}},"total":{"type":"number"},"skip":{"type":"number"},"limit":{"type":"number"}},"additionalProperties":false}); 
+  }
+  jsonTreeCreate14();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-15'></div>
+ <script>
+  function jsonTreeCreate15() { 
+   document.getElementById('code-block-json-15').innerHTML = JSONTree.create({"type":"object","properties":{"products":{"type":"array","items":{"type":"object","properties":{"id":{"type":"number"},"title":{"type":"string"},"description":{"type":"string"},"category":{"type":"string"},"price":{"type":"number"},"discountPercentage":{"type":"number"},"rating":{"type":"number"},"stock":{"type":"number"},"tags":{"type":"array","items":{"type":"string"}},"brand":{"type":"string"},"sku":{"type":"string"},"weight":{"type":"number"},"dimensions":{"type":"object","properties":{"width":{"type":"number"},"height":{"type":"number"},"depth":{"type":"number"}},"required":["width","height","depth"],"additionalProperties":false},"warrantyInformation":{"type":"string"},"shippingInformation":{"type":"string"},"availabilityStatus":{"type":"string"},"reviews":{"type":"array","items":{"type":"object","properties":{"rating":{"type":"number"},"comment":{"type":"string"},"date":{"type":"string"},"reviewerName":{"type":"string"},"reviewerEmail":{"type":"string"}},"required":["rating","comment","date","reviewerName","reviewerEmail"],"additionalProperties":false}},"returnPolicy":{"type":"string"},"minimumOrderQuantity":{"type":"number"},"meta":{"type":"object","properties":{"createdAt":{"type":"string"},"updatedAt":{"type":"string"},"barcode":{"type":"string"},"qrCode":{"type":"string"}},"required":["createdAt","updatedAt","barcode","qrCode"],"additionalProperties":false},"images":{"type":"array","items":{"type":"string"}},"thumbnail":{"type":"string"}},"required":["id","title"," ... truncated); 
+  }
+  jsonTreeCreate15();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">100-products</p>
+            <p class="text-sm">
+              <span>1:18:15 pm</span> / <span>00:00:00:530</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">100-products</h5>
+<span class='badge badge-success'>02.18.2026 1:18:15 pm</span>
+<span class='badge badge-danger'>02.18.2026 1:18:16 pm</span>
+<span class='badge badge-default'>00:00:00:530</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          TestCaseId: TC_6
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Method: GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 pm</td>
+        <td>
+          Endpoint: https://dummyjson.com/products?limit=100
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:16 pm</td>
+        <td>
+          Status Code: 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:16 pm</td>
+        <td>
+          Content-Type: application/json; charset=utf-8
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:16 pm</td>
+        <td>
+          Content-Length: 48
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:16 pm</td>
+        <td>
+          Body Byte Length: 48
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:16 pm</td>
+        <td>
+          Response Body (raw): '{"message":"Invalid 'limit' - must be a number"}'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:16 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-16'></div>
+ <script>
+  function jsonTreeCreate16() { 
+   document.getElementById('code-block-json-16').innerHTML = JSONTree.create({"message":"Invalid 'limit' - must be a number"}); 
+  }
+  jsonTreeCreate16();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:18:16 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Status code mismatch expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:109)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:18:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Add Place API</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:18:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Get Place API</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:18:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Update Place API</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:18:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>Delete Place API</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:18:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>100-products</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 18, 2026 01:18:02 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 18, 2026 01:18:16 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>5</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='16%'>
+<b>1</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='83%'><b>5</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='3%'><b>3</b> events passed</small></div>
+<div>
+<small data-tooltip='6%'><b>6</b> events failed,
+<b data-tooltip='%'>84</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Add Place API":4.8,"Get Place API":2.552,"Update Place API":2.692,"Delete Place API":2.745,"Dummy Json":0.578,"100-products":0.53
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Framework</td>
+<td>Excel Driven</td>
+</tr>
+<tr>
+<td>Tester</td>
+<td>Jatin</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>QA</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 5,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 3,
+failEvents: 6,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 84
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

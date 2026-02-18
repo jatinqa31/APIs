@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="1" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-18T13:17:58 IST" name="API Suite" finished-at="2026-02-18T13:18:16 IST" duration-ms="17946">
+    <groups>
+    </groups>
+    <test started-at="2026-02-18T13:17:58 IST" name="API Tests" finished-at="2026-02-18T13:18:16 IST" duration-ms="17946">
+      <class name="tests.ApiExcelDrivenTest">
+        <test-method signature="executeApiTest(java.util.Map)[pri:0, instance:tests.ApiExcelDrivenTest@19f7222e]" started-at="2026-02-18T13:18:01 IST" name="executeApiTest" data-provider="apiData" finished-at="2026-02-18T13:18:07 IST" duration-ms="5379" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Expected Status=200, Endpoint=https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123, Remarks=, Headers=, Test Case Id=TC_1, Request Body={
+  "location": {
+    "lat": -38.383494,
+    "lng": 33.427362
+  },
+  "accuracy": 50,
+  "name": "Frontline house",
+  "phone_number": "(+91) 983 893 3937",
+  "address": "29, side layout, cohen 09",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "French-IN"
+}, ExpectedSchemaPath=Schemas/user-schema_1.json, Method=POST, Request Name=Add Place API, Is_automated=Yes, Query Params=key=qaclick123; , Auth Type=noauth}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[properties
+Expected: limit
+     but none found
+ ; properties
+Expected: products
+     but none found
+ ; properties
+Expected: skip
+     but none found
+ ; properties
+Expected: total
+     but none found
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: properties
+Expected: limit
+     but none found
+ ; properties
+Expected: products
+     but none found
+ ; properties
+Expected: skip
+     but none found
+ ; properties
+Expected: total
+     but none found
+
+at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:417)
+at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:394)
+at utils.SchemaCompareUtil.compareSchemas(SchemaCompareUtil.java:11)
+at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:181)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeApiTest -->
+        <test-method signature="executeApiTest(java.util.Map)[pri:0, instance:tests.ApiExcelDrivenTest@19f7222e]" started-at="2026-02-18T13:18:07 IST" name="executeApiTest" data-provider="apiData" finished-at="2026-02-18T13:18:09 IST" duration-ms="2549" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Expected Status=200, Endpoint=http://rahulshettyacademy.com/maps/api/place/get/json?place_id=cbeef2741cce7486303e61bbc3df2945&key=qaclick123, Remarks=, Headers=, Test Case Id=TC_2, Request Body=, ExpectedSchemaPath=Schemas/user-schema_1.json, Method=GET, Request Name=Get Place API, Is_automated=Yes, Query Params=place_id=cbeef2741cce7486303e61bbc3df2945; key=qaclick123; , Auth Type=noauth}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Status code mismatch expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Status code mismatch expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeApiTest -->
+        <test-method signature="executeApiTest(java.util.Map)[pri:0, instance:tests.ApiExcelDrivenTest@19f7222e]" started-at="2026-02-18T13:18:09 IST" name="executeApiTest" data-provider="apiData" finished-at="2026-02-18T13:18:12 IST" duration-ms="2688" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Expected Status=200, Endpoint=https://rahulshettyacademy.com/maps/api/place/update/json?place_id=cbeef2741cce7486303e61bbc3df2945&key=qaclick123, Remarks=, Headers=, Test Case Id=TC_3, Request Body={
+"place_id":"cbeef2741cce7486303e61bbc3df2945",
+"address":"70 winter walk, USA",
+"key":"qaclick123"
+}, ExpectedSchemaPath=Schemas/user-schema_1.json, Method=PUT, Request Name=Update Place API, Is_automated=Yes, Query Params=place_id=cbeef2741cce7486303e61bbc3df2945; key=qaclick123; , Auth Type=noauth}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Status code mismatch expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Status code mismatch expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeApiTest -->
+        <test-method signature="executeApiTest(java.util.Map)[pri:0, instance:tests.ApiExcelDrivenTest@19f7222e]" started-at="2026-02-18T13:18:12 IST" name="executeApiTest" data-provider="apiData" finished-at="2026-02-18T13:18:15 IST" duration-ms="2735" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Expected Status=200, Endpoint=https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123, Remarks=, Headers=, Test Case Id=TC_4, Request Body={
+
+    "place_id":"cbeef2741cce7486303e61bbc3df2945"
+}
+, ExpectedSchemaPath=Schemas/user-schema_1.json, Method=DELETE, Request Name=Delete Place API, Is_automated=Yes, Query Params=key=qaclick123; , Auth Type=noauth}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Status code mismatch expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Status code mismatch expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeApiTest -->
+        <test-method signature="executeApiTest(java.util.Map)[pri:0, instance:tests.ApiExcelDrivenTest@19f7222e]" started-at="2026-02-18T13:18:15 IST" name="executeApiTest" data-provider="apiData" finished-at="2026-02-18T13:18:15 IST" duration-ms="577" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Expected Status=200, Endpoint=https://dummyjson.com/products, Remarks=, Headers=Accept=application/json; Content-Type=application/json; , Test Case Id=TC_5, Request Body=, ExpectedSchemaPath=Schemas/user-schema_1.json, Method=GET, Request Name=Dummy Json, Is_automated=Yes, Query Params=, Auth Type=noauth}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeApiTest -->
+        <test-method signature="executeApiTest(java.util.Map)[pri:0, instance:tests.ApiExcelDrivenTest@19f7222e]" started-at="2026-02-18T13:18:15 IST" name="executeApiTest" data-provider="apiData" finished-at="2026-02-18T13:18:16 IST" duration-ms="519" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Expected Status=200, Endpoint=https://dummyjson.com/products?limit=100, Remarks=, Headers=Accept=application/json; Content-Type=application/json; , Test Case Id=TC_6, Request Body=, ExpectedSchemaPath=Schemas/user-schema_1.json, Method=GET, Request Name=100-products, Is_automated=Yes, Query Params=limit=100; , Auth Type=noauth}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Status code mismatch expected [200] but found [400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Status code mismatch expected [200] but found [400]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at tests.ApiExcelDrivenTest.executeApiTest(ApiExcelDrivenTest.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeApiTest -->
+      </class> <!-- tests.ApiExcelDrivenTest -->
+    </test> <!-- API Tests -->
+  </suite> <!-- API Suite -->
+</testng-results>
