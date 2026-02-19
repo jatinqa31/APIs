@@ -19,7 +19,11 @@ public class ExtentManager {
         return extent;
     }
     
+<<<<<<< HEAD
     //-------------------Adding again to remote repository-------------------------------------
+=======
+    //-----------JATIN BAKSHI---------------------------------------------
+>>>>>>> 54da82ed2cc8d703c45f2452d0a085a7fa6c6b22
     
 
     public static ExtentReports getInstance() {
@@ -29,6 +33,7 @@ public class ExtentManager {
             String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss")
                     .format(new Date());
 
+<<<<<<< HEAD
             
             ///added by jatin
 //            String reportPath =
@@ -36,6 +41,15 @@ public class ExtentManager {
 //                    "target/extent/ApiAutomationReport.html";
             
             String reportPath = System.getProperty("user.dir") + "/target/ExtentReport.html";
+=======
+//             String reportPath =
+// //                    "target/extent/ApiAutomationReport_" + timeStamp + ".html";
+//                     "target/extent/ApiAutomationReport.html";
+            
+            
+            String reportPath = System.getProperty("user.dir") + "/target/ExtentReport.html";
+            
+>>>>>>> 54da82ed2cc8d703c45f2452d0a085a7fa6c6b22
             ExtentSparkReporter spark =
                     new ExtentSparkReporter(reportPath);
 
