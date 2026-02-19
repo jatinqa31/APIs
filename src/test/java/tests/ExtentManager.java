@@ -29,9 +29,13 @@ public class ExtentManager {
             String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss")
                     .format(new Date());
 
-            String reportPath =
-//                    "target/extent/ApiAutomationReport_" + timeStamp + ".html";
-                    "target/extent/ApiAutomationReport.html";
+//             String reportPath =
+// //                    "target/extent/ApiAutomationReport_" + timeStamp + ".html";
+//                     "target/extent/ApiAutomationReport.html";
+            
+            
+            String reportPath = System.getProperty("user.dir") + "/target/ExtentReport.html";
+            
             ExtentSparkReporter spark =
                     new ExtentSparkReporter(reportPath);
 
