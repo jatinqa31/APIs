@@ -3,19 +3,20 @@ name: API Automation CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
     steps:
-    # 1️⃣ Checkout Code
-    - name: Checkout Repository
+    - name: Checkout repository
       uses: actions/checkout@v4
 
-    # 2️⃣ Setup Java 21
     - name: Set up JDK 21
       uses: actions/setup-java@v4
       with:
@@ -23,36 +24,33 @@ jobs:
         java-version: '21'
         cache: maven
 
-    # 3️⃣ Verify Java Version (Optional but good for debugging)
-    - name: Verify Java Version
-      run: java -version
-
-    # 4️⃣ Build & Run Tests
-    - name: Run Maven Tests
+    - name: Run Tests
       run: mvn clean test
-    
-    - name: Debug - List Target Folder
-      if: always()
+
+    # Create folder for GitHub Pages
+    - name: Prepare Pages Folder
       run: |
-        echo "===== TARGET CONTENT ====="
-        ls -R target || true    
+        mkdir -p public
+        cp target/ExtentReport.html public/index.html
 
-    # 5️⃣ Upload Extent Report (ALWAYS upload even if tests fail)
-    - name: Upload Extent Report
-      if: always()
-      uses: actions/upload-artifact@v4
+    # Upload for GitHub Pages
+    - name: Upload artifact for Pages
+      uses: actions/upload-pages-artifact@v3
       with:
-        name: Extent-Report
-        path: |
-          target/ExtentReport.html
-          target/extent-report/
-        if-no-files-found: warn
+        path: public
 
-    # 6️⃣ Upload Surefire Reports (Very Important for debugging failures)
-    - name: Upload Test Reports
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: Surefire-Reports
-        path: target/surefire-reports/
-        if-no-files-found: warn
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
