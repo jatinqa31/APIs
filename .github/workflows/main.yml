@@ -30,6 +30,12 @@ jobs:
     # 4️⃣ Build & Run Tests
     - name: Run Maven Tests
       run: mvn clean test
+    
+    - name: Debug - List Target Folder
+      if: always()
+      run: |
+        echo "===== TARGET CONTENT ====="
+        ls -R target || true    
 
     # 5️⃣ Upload Extent Report (ALWAYS upload even if tests fail)
     - name: Upload Extent Report
