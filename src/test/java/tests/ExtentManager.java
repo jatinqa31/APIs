@@ -29,6 +29,8 @@ public class ExtentManager {
             String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss")
                     .format(new Date());
 
+            
+            ///added by jatin
 //            String reportPath =
 ////                    "target/extent/ApiAutomationReport_" + timeStamp + ".html";
 //                    "target/extent/ApiAutomationReport.html";
