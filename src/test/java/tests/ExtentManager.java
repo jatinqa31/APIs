@@ -19,7 +19,7 @@ public class ExtentManager {
         return extent;
     }
     
-    //--------------------------------------------------------
+    //-------------------Adding again to remote repository-------------------------------------
     
 
     public static ExtentReports getInstance() {
