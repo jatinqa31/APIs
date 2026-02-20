@@ -10,7 +10,7 @@
   <name>APIs_validations</name>
   <url>http://maven.apache.org</url>
 
-<!--  <properties>
+<!--  <properties> jatin Bakshi commented this Llie
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>-->
   
